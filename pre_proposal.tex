@@ -333,7 +333,7 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Pre-proposal:}
+\title{Pre-proposal: Adversarial Analysis of Natural Language Inference Systems}
 
 
 % author names and affiliations
@@ -351,27 +351,29 @@
 
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
-\begin{abstract}
-The abstract goes here.
-\end{abstract}
+% \begin{abstract}
+% The abstract goes here.
+% \end{abstract}
 
 
 
 \section{Introduction}
-In recent years, deep learning models have achieved and continued to improve on state-of-the-art results in pretty much all NLP tasks.
+In recent years, deep learning models have achieved and continued to improve on state-of-the-art results on pretty much all NLP tasks.
 However, adversarial examples -- small perturbations to a model's inputs that cause its outputs to be wrong -- have revealed weaknesses in many models' robustness and generalization abilities.
 Furthermore, the end-to-end, black-box nature of these models greatly limits the interpretability of their decisions, making it even more difficult to modify them to defend against (known and unknown) adversarial attacks.
 
-One could say that the fundamental shortcoming of all current machine learning models on NLP tasks is not possessing a ``real'' understanding of language. Previous work on interpretability has shown that models often use fallible surface-level heuristics \cite{mccoy_right_2019}, or just pay attention to the wrong parts of the input to arrive at their answer.
+One could say that the fundamental shortcoming of all current NLP systems is a lack of a deep, `real' understanding of language.
+Therefore, we will focus on the task of natural language inference (NLI), a very direct test of natural language understanding.
+The setup of the NLI task is to determine whether a \emph{hypothesis} is true given a \emph{premise}, answering \emph{entailment}, \emph{contradiction}, or \emph{neutral} (the hypothesis's truth value can't be determined).
 
-Therefore, we will study tasks that are most focused on natural language understanding, such as logical inference and question answering.
 % Most neural systems designed for these tasks create or use some form of vector sentence representations/embeddings, often computed as a function of single word embeddings. \\
-The current top-performing systems for these tasks build on pretrained BERT (Bidirectional Encoder Representations from Transformers) \cite{devlin_bert:_2018} representations of sentences, fine-tuned to specific tasks.
+The current top-performing systems for NLI are built on pretrained BERT (Bidirectional Encoder Representations from Transformers) \cite{devlin_bert:_2018} representations of sentences, fine-tuned to specific tasks.
 The architecture of BERT is built on the Transformer architecture \cite{vaswani_attention_2017}, which is a non-recurrent, purely attention-based neural model architecture.
 While many analyses of recurrent models (RNNs, LSTMs of various kinds) exist, there is relatively little work on Transformer-based architectures.
 
 Our goal is to pit BERT and other high-performing models with varying architectures against different adversarial attacks, and carefully examine when and why they fail.
 Those insights will help us interpret what the model is really learning and understanding, and hopefully lead to ideas for defending against those attacks and generally improving the performance of the model.
+It is also possible that the failures of these models come not from their architecture, but from significant gaps in their training data; we will try to disentangle that blame.
 
 % There are two modes of failure on adversarial examples: oversensitivity and overstability.
 % Oversensitivity is when inputs are perturbed in a way that should \emph{not} affect the output, but the model changes its output (also called Should-Not-Change).
@@ -394,17 +396,47 @@ Those insights will help us interpret what the model is really learning and unde
 
 
 \section{Related Work}
-many things
+Various ways of generating adversarial examples (also called challenge datasets) have been shown to break state-of-the-art models:
+\begin{itemize}
+  \item McCoy et al. (2019) \cite{mccoy_right_2019} show that BERT and other models use specific fallible, surface-level syntactic heuristics, by testing them on a challenge dataset (HANS) that violates those heuristics.
+  Their heuristics can be categorised into lexical overlap, subsequence, and constituent.
+  % They then try training the models on data very similar to their new dataset, and find that the models do stop using specific types of heuristics if they are trained on examples that violate them.
+  % However, when failures of only some of the heuristics were exposed, the models were only sometimes able to generalise what they learned from other heuristics.
+  \item Glockner et al. (2018) \cite{glockner_breaking_2018} created a challenge dataset focused on simple lexical inferences and world knowledge by replacing words in the SNLI dataset with related words.
+  \item Naik et al. (2018) \cite{naik_stress_2018} created examples based on antonyms, numerical reasoning, word overlap (append ``and true is true'' to hypothesis) negation words (append ``false is not true''), length mismatch (append ``and true is true'' 5 times), and spelling errors.
+\end{itemize}
+
+Liu et al. (2019) \cite{liu_inoculation_2019} describe a method of analysing challenge datasets, to figure out whether the model or the original training dataset is the primary cause of weakness of the trained model.
+Using a metaphor of inoculation, they expose the model to just a few challenge examples, and then re-test it on the original test set and the challenge test set.
+\begin{enumerate}
+  \item If the model still fails the challenge dataset, the weakness probably lies in its design/architecture.
+  \item If the model can now succeed at the challenge dataset (without sacrificing performance on the original dataset), then the original dataset is at fault.
+  \item If the model does better on the challenge dataset but worse on the original dataset, the model is learning something not generalizable from the extra challenge data.
+  This suggests that the challenge dataset is somehow not representative of the phenomenon it was trying to test, for example being very skewed to a particular label.
+\end{enumerate}
+
+One persistent challenge if existing datasets are at fault is that it is impossible to augment the training set with every possible kind of challenge example, meaning that we can only ever effectively defend against known attacks.
+
+
+\section{Proposed Work}
+The first step will be to reproduce the models' results on MNLI (the dominant NLI dataset).
+% \cite{williams_broad-coverage_2018}.
+
+Then, we will take two approaches to understanding the models' failures on adversarial examples:
+
+\begin{enumerate}
+  \item By testing the models on different kinds of adversarial examples, we can see which models are better and worse at encoding various kinds of information, for example being better at learning syntactic or semantic knowledge.
+  \item We will examine the models' decision-making process with an existing visualization tool such as \cite{vig_visualizing_2019}, which displays the weights learned and activated in different parts of the model by a particular input.
+\end{enumerate}
+
+If we gain useful insights about the models from those analyses, we can maybe incorporate them into modifying model design, or adding (e.g. preprocessing) steps to the system pipeline.
 
 
 
-
-
-\section{Methods}
-The first step will be to reproduce the models' results on MNLI 
 
 \section{Conclusion}
-The conclusion goes here.
+In this work, we aim to chip away at the problem of model interpretability in modern neural models, by examining successful models' failures on adversarial examples in the task of NLI.
+Interpretability leads to more useful (and safe) models for practical use, as well as helping to generate ideas for future higher-performing models.
 
 
 
