@@ -1,0 +1,172 @@
+%File: formatting-instruction.tex
+\documentclass[letterpaper]{article}
+\usepackage{aaai19}
+\usepackage{times}
+\usepackage{helvet}
+\usepackage{courier}
+\frenchspacing
+\setlength{\pdfpagewidth}{8.5in}
+\setlength{\pdfpageheight}{11in}
+\pdfinfo{
+/Title (Adversarial Analysis of Natural Language Inference Systems)
+/Author (Tiffany Chien, Jugal Kalita)}
+\setcounter{secnumdepth}{0}  
+\begin{document}
+% The file aaai.sty is the style file for AAAI Press 
+% proceedings, working notes, and technical reports.
+%
+\title{Proposal: Adversarial Analysis of Natural Language Inference Systems}
+\author{Tiffany Chien \\
+University of California, Berkeley\\
+\And
+Jugal Kalita \\
+University of Colorado, Colorado Springs
+}
+\maketitle
+\begin{abstract}
+\begin{quote}
+The release of large natural language inference (NLI) datasets like SNLI and MNLI led to rapid development and improvement of completely neural systems for the task.
+Most recently, pre-trained, Transformer-based models like OpenAI-GPT and BERT have reached near-human performance on these datasets.
+However, various work has questioned the degree to which performance on these datasets really indicates understanding of the task (and language in general).
+Adversarial (challenge) datasets have been created that cause models that perform well on these datasets to fail dramatically.
+Although extra training on this data generally improves model performance on just that type of data, transferring that learning to unseen examples is still partial at best.
+This work compares the failures of state-of-the-art and older models, to determine how differences in architecture (non-recurrent) and training (pre-training) affect what the models are better and worse at.
+Then, we use a visualization tool on the new Transformer-based models to deeply examine what information they pay attention to, and how that leads to failure.
+\end{quote}
+\end{abstract}
+
+\section{Introduction}
+In recent years, deep learning models have achieved and continued to improve on state-of-the-art results on many NLP tasks.
+However, models that perform extremely well on standard datasets have been shown to be rather brittle and easily tricked.
+In particular, the idea of \emph{adversarial} examples or attacks was brought over from computer vision, and various methods of slightly perturbing inputs have been developed that cause models to fail catastrophically \cite{mccoy_right_2019,glockner_breaking_2018,naik_stress_2018}.
+% The particular adversarial methods developed in vision do not transfer directly to NLP because the domain of text is discrete rather than continuous (like in vision), and because generating perturbations to text that preserve grammaticality and meaning is quite nontrivial.
+
+Adversarial attacks need to be studied from a security perspective for the deployment of real-world systems, but they are also a powerful lens into \emph{interpretability} of black-box deep learning systems.
+By examining the failures of state-of-the-art models, we can learn a lot about what they are really learning, which may give us insights into improving their robustness and general performance.
+
+One philosophical generalization about the cause of failure for all current NLP systems is a lack of deep, `real' understanding of language.
+We will focus on the task of natural language inference (NLI, also known as textual entailment (RTE)), which is a basic natural language understanding task that is thought to be a key stepping stone to higher-level understanding tasks like question answering and summarization.
+The setup of the NLI task is to determine whether a \emph{hypothesis} is true given a \emph{premise}, answering \emph{entailment}, \emph{contradiction}, or \emph{neutral} (the hypothesis's truth value can't be determined).
+
+The current top-performing systems for NLI rely on pretraining on generic tasks, followed by fine-tuning on a labeled task-specific dataset.
+This is in contrast to older (before late 2018) models, which were primarily task-specific architectures trained primarily on task-specific labeled datasets.
+In addition, the Transformer architecture \cite{vaswani_attention_2017} now outperforms the previously dominating recurrent architectures (LSTM and variants).
+We want to investigate why exactly new models perform better, i.e. what particular kinds of reasoning they capture better.
+
+Our goal is to pit the new state-of-the-art models against various adversarial attacks, and carefully examine when and why they fail.
+We will focus on semantic phenomena, like negation \cite{kang_adventure:_2018}, compositionality \cite{nie_analyzing_2018}, and commonsense reasoning \cite{glockner_breaking_2018}.
+Many failure analyses have been performed before on older model architectures, but our contribution will be to do the same on the newest state-of-the-art models, and then compare the results with older models.
+Furthermore, we will go past observing when models fail and how to make them fail, and approach the question of why using visualization tools that display the models' internals.
+
+
+
+
+
+\section{Related Work}
+
+One important question to ask when studying adversarial vulnerability is whether the failure is caused by the model design itself, or the limits of its training data.
+One way to begin disentangling this blame, described by \citeauthor{liu_inoculation_2019} (2019) under a metaphor of inoculation, is to expose a small part of the challenge dataset to the model during training, and re-test its evaluation performance on the original test set and the challenge dataset.
+\begin{enumerate}
+  \item If the model still fails the challenge dataset, the weakness probably lies in its design/architecture or training process.
+  \item If the model can now succeed at the challenge dataset (without sacrificing performance on the original dataset), then the original dataset is at fault.
+  \item If the model does better on the challenge dataset but worse on the original dataset, the challenge dataset is somehow not representative of the phenomenon it was trying to test, for example having annotation artifacts or being very skewed to a particular label.
+\end{enumerate}
+Unfortunately, even if adversarial training does improve model performance, it is fundamentally impossible to devise and train on all possible linguistic phenomena.
+The transferability of adversarial robustness to new kinds of examples has been tested by some of the above works, by withholding some example generation methods while training on others.
+\citeauthor{nie_analyzing_2018} find that knowledge of each of their rule-based templates was almost completely non-transferable to others.
+In fact, training on some specific templates caused overfitting and hurt overall robustness.
+\citeauthor{mccoy_right_2019} find more mixed results, with some cases of successful transfer.
+However, many of their syntactic heuristics are pretty similar and overlapping, so generalizability is not as difficult.
+
+Many standard datasets for different tasks have been shown to have blatant annotation artifacts, allowing models to learn features that are strong in the training (and testing) data, but that have nothing to do with actually performing the task.
+\citeauthor{gururangan_annotation_2018} (2018) find many of these artifacts in standard NLI datasets (SNLI and MNLI).
+For example, \emph{neutral} hypotheses tend to be longer in length, because an easy way to generate a hypothesis that isn't necessarily entailed by the premise is to add extra details.
+% For the same reason, modifiers (\emph{tall, sad, popular}) and cause and purpose clauses (\emph{because}) are associated with \emph{neutral} as well.
+Meanwhile, strong negation words like \emph{nobody, no, never} are strong indicators of \emph{contradiction}.
+With these artifacts in mind, they split the data into ``hard'' and ``easy'' versions, and model performance decreased by about 15\% on the hard test set.
+These findings suggest that it is not the models' faults for failing on adversarial examples, given that there exist easier ways to get high accuracy than truly understanding anything.
+But it also means that current evaluation metrics greatly overestimate models' abilities and understanding.
+
+\section{Experimental Setup}
+We will test a variety of models against a variety of adversarial datasets, and then compare and visualize the results.
+
+\subsection{Models}
+The three newest models that we will study all gain most of their power from pre-training on a generic language task with a huge unlabeled dataset.
+\begin{enumerate}
+	\item \textbf{OpenAI-GPT} \cite{radford_improving_2018} pre-trains on the standard left-to-right language modelling task.
+	\item \textbf{BERT} \cite{devlin_bert:_2018} pre-trains on a bidirectional word-masking language modelling task, in addition to sentence pair prediction (whether the second sentence is likely to directly follow the first).
+	\item\textbf{MT-DNN} \cite{liu_multi-task_2019} combines BERT and multi-task learning during its pre-training, and is the reigning champion on the nine-task GLUE (General Language Understanding Evaluation) benchmark \cite{wang_glue:_2018}.
+\end{enumerate}
+All of these models are based on the Transformer architecture \cite{vaswani_attention_2017}, a non-recurrent, purely attention-based architecture.
+One important difference between the Transformer and recurrent architectures is how \emph{word order} information is encoded.
+Parsing and understanding word order is obviously crucial to language understanding.
+Recurrent architectures explicitly pass the hidden states of previous words as an input to future hidden states.
+The Transformer instead uses `position encodings', fixed (not learned) sinusoids with frequencies determined by a word's position in the input sentence.
+These position encodings are then added to the input embeddings.
+We want to explore how this comparatively simple method compares to explicit recurrence.
+
+We will compare with three recurrent models (the second two build on the first).
+\begin{enumerate}
+	\item \textbf{ESIM} Enhanced Sequential Inference Model \cite{chen_enhanced_2016} uses a bidrectional LSTM to encode sentences, and uses attention across those representations.
+	\item \textbf{S-TLSTM} Syntactic TreeLSTM \cite{chen_enhanced_2016} is identical to ESIM except it uses a TreeLSTM that takes a dependency parse as input.
+	\item \textbf{KIM} Knowledge-based Inference Model \cite{chen_neural_2018} enhances ESIM by incorporating knowledge from WordNet in a variety of ways (involving additions to the model architecture).
+\end{enumerate}
+S-TLSTM and KIM use explicit extra information (parses and knowledge base data, respectively), which is the complete opposite of the unsupervised pre-training by the newest models.
+\citeauthor{goldberg_assessing_2019} found that BERT performed remarkably well on syntactic tests, so it will be interesting to see how they compare.
+
+
+
+
+\subsection{Adversarial Datasets}
+The creation of adversarial examples in NLP comes from hypotheses and observations about the simplistic assumptions that models make in place of real understanding.
+We list five datasets below for context, but we will just be using the last three (because of likely time constraints).
+\begin{itemize}
+	\item \citeauthor{mccoy_right_2019} (2019) show that models use specific fallible, surface-level syntactic heuristics, by testing them on a challenge dataset (HANS) that violates those heuristics.
+	Their heuristics can be categorised into lexical overlap, subsequence, and constituent.
+	They find that while all the models they tested did worse on their dataset, BERT performed best.
+	\item \citeauthor{naik_stress_2018} (2018) manually examined and categorized 100 errors that a model made, and automatically generated examples in each category, including antonyms, numerical reasoning, word overlap (append ``and true is true'' to hypothesis) negation words (append ``false is not true''), length mismatch (append ``and true is true'' 5 times), and spelling errors.
+	\item \textbf{\citeauthor{kang_adventure:_2018}} (2018) created a handful of rule templates based on knowledge bases (WordNet, PPDB (paraphrase database)), in addition to a simple hand-defined negation rule.
+	They then trained their model in a GAN framework, fighting off against the rule-based generator.
+	\item \textbf{\citeauthor{nie_analyzing_2018}} (2018) conduct a series of experiments that demonstrate that models do not correctly use compositionality information.
+	For example, they shuffle the words in the training dataset (changing their compositional meaning), but models trained on the shuffled data still performed equally well when evaluated on the original dataset.
+	They generate a `compositionality-sensitivity' test by selecting examples where bag-of-words models perform poorly.
+	\item \textbf{\citeauthor{glockner_breaking_2018}} (2018) creates a dataset testing lexical inference by replacing single words in SNLI examples' hypotheses (keeping the premises the same).
+	The new words come from an online English learning resource, and they all already exist in SNLI.
+\end{itemize}
+Other than \citeauthor{mccoy_right_2019}, these were before GPT and BERT, so they analyze older models only.
+
+\subsection{Visualization Tool}
+After comparing the different models' performance on the different challenge examples, we will look deeper into the Transformer-based models using a visualization tool developed by \citeauthor{vig_visualizing_2019} (2019).
+The tool specifically focuses on visualizing attention, displaying what different layers and `attention heads' are paying attention to for specific inputs.
+
+
+
+\section{Planned Timeline}
+By week:
+\begin{enumerate}
+	\setcounter{enumi}{2}
+	\item Get computer/GPU server set up. \\
+		 Replicate MNLI results for 3 pre-trained models.
+	\item Replicate MNLI results for 3 recurrent models. \\
+	Evaluate all models on negation and knowledge base dataset \cite{kang_adventure:_2018}.
+	\item Evaluate all models on compositionality \cite{nie_analyzing_2018} and lexical inference \cite{glockner_breaking_2018} datasets.
+	\item Analyze results (compare different models' performance on different datasets). \\ 
+	Prepare mid term results, presentation, and writeup.
+	\item For datasets that the pretrained models fail on, try fine-tuning them on a portion of the challenge data, and re-evaluate.
+	\item[8--9.] Use visualization tool to examine failures (details depend on results of above experiments).
+	\item[10.] Prepare final results, presentation, and writeup.
+\end{enumerate}
+
+
+
+\section{Conclusion}
+In this work, we aim to chip away at the problem of model interpretability in modern neural models, by examining successful models' failures on adversarial examples.
+We utilize the ideas of others' analyses but focus on the most recent and hyped state-of-the-art models.
+We complement larger-scale targeted testing with manually examining visualizations of common failures.
+Interpretability leads to more useful (and safe) models for practical use, as well as helping to generate ideas for future higher-performing models, and we hope that the relentless pursuit of higher accuracy on existing datasets will continue to be balanced with critical analysis of what models really understand.
+
+
+\bibliographystyle{aaai19}
+\bibliography{./MyLibrary}
+
+\end{document}
