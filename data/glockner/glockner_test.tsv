@@ -1,0 +1,821 @@
+index	promptID	pairID	genre	sentence1_binary_parse	sentence2_binary_parse	sentence1_parse	sentence2_parse	sentence1	sentence2	label1	label2	label3	label4	label5	gold_label
+15868								A couple drink beer.	A couple drink cider.						contradiction
+15869								A couple drink beer.	A couple drink gin.						contradiction
+10935								A lady with a large black bag is walking in the rain near the park.	A lady with a large black bag is walking in the rain far away from the park.						contradiction
+10936								A lady with a large black bag is walking in the rain near the park.	A lady with a large green bag is walking in the rain near the park.						contradiction
+10937								A lady with a large black bag is walking in the rain near the park.	A lady with a tiny black bag is walking in the rain near the park.						contradiction
+10938								A lady with a large black bag is walking in the rain near the park.	A lady with a large blue bag is walking in the rain near the park.						contradiction
+10939								A lady with a large black bag is walking in the rain near the park.	A lady with a large black bag is walking in the rain far from the park.						contradiction
+16505								The man wearing the red uniform jumps towards the ball.	The man wearing the grey uniform jumps towards the ball.						contradiction
+16506								The man wearing the red uniform jumps towards the ball.	The man wearing the orange uniform jumps towards the ball.						contradiction
+16507								The man wearing the red uniform jumps towards the ball.	The man wearing the brown uniform jumps towards the ball.						contradiction
+16508								The man wearing the red uniform jumps towards the ball.	The man wearing the purple uniform jumps towards the ball.						contradiction
+16509								The man wearing the red uniform jumps towards the ball.	The man wearing the pink uniform jumps towards the ball.						contradiction
+11590								A small dog standing in the middle of the street.	A little dog standing in the middle of the street.						entailment
+11591								A small dog standing in the middle of the street.	A small dog standing in the middle of the road.						entailment
+11592								A small dog standing in the middle of the street.	A tiny dog standing in the middle of the street.						entailment
+11593								A small dog standing in the middle of the street.	A big dog standing in the middle of the street.						contradiction
+11594								A small dog standing in the middle of the street.	A great dog standing in the middle of the street.						contradiction
+10670								An old man lays on a boat near the water	A young man lays on a boat near the water						contradiction
+10671								An old man lays on a boat near the water	A new man lays on a boat near the water						contradiction
+10672								An old man lays on a boat near the water	An old man lays on a boat far from the water						contradiction
+10674								An old man lays on a boat near the water	An old man lays on a boat far away from the water						contradiction
+17310								A man is giving a speech that is anti-Israel.	A man is giving a speech that is anti-Syria.						contradiction
+17311								A man is giving a speech that is anti-Israel.	A man is giving a speech that is pro-Israel.						contradiction
+17312								A man is giving a speech that is anti-Israel.	A man is giving a speech that is anti-Turkey.						contradiction
+17313								A man is giving a speech that is anti-Israel.	A man is giving a speech that is anti-Egypt.						contradiction
+17314								A man is giving a speech that is anti-Israel.	A man is giving a speech that is anti-Greece.						contradiction
+13060								old woman close to window	old woman far away from window						contradiction
+13061								old woman close to window	old woman far from window						contradiction
+13062								old woman close to window	new woman close to window						contradiction
+13063								old woman close to window	young woman close to window						contradiction
+13064								old woman close to window	old woman near window						entailment
+17995								A man is drinking wine.	A man is drinking cider.						contradiction
+17996								A man is drinking wine.	A man is drinking vodka.						contradiction
+17997								A man is drinking wine.	A man is drinking champagne.						contradiction
+17998								A man is drinking wine.	A man is drinking whisky.						contradiction
+17999								A man is drinking wine.	A man is drinking tequila.						contradiction
+13925								A woman cannot lean over because she is too large.	A man cannot lean over because she is too large.						contradiction
+13926								A woman cannot lean over because she is too large.	A woman cannot lean over because she is too little.						contradiction
+13927								A woman cannot lean over because she is too large.	A woman cannot lean over because she is too small.						contradiction
+13928								A woman cannot lean over because she is too large.	A woman cannot lean over because she is too tiny.						contradiction
+13929								A woman cannot lean over because she is too large.	A woman can lean over because she is too large.						contradiction
+18680								Dog on a leash looking over a stone wall	Dog on a leash looking over a bronze wall						contradiction
+18681								Dog on a leash looking over a stone wall	Dog on a leash looking over a wood wall						contradiction
+18682								Dog on a leash looking over a stone wall	Dog on a leash looking over a glass wall						contradiction
+18683								Dog on a leash looking over a stone wall	Dog on a leash looking over a plastic wall						contradiction
+18684								Dog on a leash looking over a stone wall	Dog on a leash looking over a cement wall						contradiction
+11865								A fisherman is handling a wheel on a small boat near a dock.	A fisherman is handling a wheel on a little boat near a dock.						entailment
+11866								A fisherman is handling a wheel on a small boat near a dock.	A fisherman is handling a wheel on a big boat near a dock.						contradiction
+11867								A fisherman is handling a wheel on a small boat near a dock.	A fisherman is handling a wheel on a small boat close to a dock.						entailment
+11868								A fisherman is handling a wheel on a small boat near a dock.	A fisherman is handling a wheel on a tiny boat near a dock.						entailment
+16845								Two people sitting on a brick wall in a city eating out of a brown box with the sun shining down on them.	Two people sitting on a brick wall in a city eating out of a silver box with the sun shining down on them.						contradiction
+16846								Two people sitting on a brick wall in a city eating out of a brown box with the sun shining down on them.	Two people sitting on a brick wall in a city eating out of a grey box with the sun shining down on them.						contradiction
+16847								Two people sitting on a brick wall in a city eating out of a brown box with the sun shining down on them.	Two people sitting on a cement wall in a city eating out of a brown box with the sun shining down on them.						contradiction
+16848								Two people sitting on a brick wall in a city eating out of a brown box with the sun shining down on them.	Two people sitting on a brick wall in a city eating out of an orange box with the sun shining down on them.						contradiction
+10690								A brown dog runs near the water.	A grey dog runs near the water.						contradiction
+10691								A brown dog runs near the water.	A brown dog runs far from the water.						contradiction
+10692								A brown dog runs near the water.	A brown dog runs far away from the water.						contradiction
+10693								A brown dog runs near the water.	An orange dog runs near the water.						contradiction
+10694								A brown dog runs near the water.	A pink dog runs near the water.						contradiction
+16910								The boys are a part of a world-famous touring group, performing for a huge audience in Sydney, Australia.	The boys are a part of a world-famous touring group, performing for an enormous audience in Sydney, Australia.						entailment
+16911								The boys are a part of a world-famous touring group, performing for a huge audience in Sydney, Australia.	The boys are a part of a world-famous touring group, performing for a huge audience in Sydney, Canada.						contradiction
+16912								The boys are a part of a world-famous touring group, performing for a huge audience in Sydney, Australia.	The boys are a part of a world-famous touring group, performing for a huge audience in Sydney, Ireland.						contradiction
+16913								The boys are a part of a world-famous touring group, performing for a huge audience in Sydney, Australia.	The boys are a part of a world-famous touring group, performing for a huge audience in Sydney, England.						contradiction
+16914								The boys are a part of a world-famous touring group, performing for a huge audience in Sydney, Australia.	The boys are a part of a world-famous touring group, performing for a huge audience in Sydney, New Zealand.						contradiction
+17445								A dog is laying on the ground in front of a Chinese food restaurant.	A dog is laying on the ground in front of an Indonesian food restaurant.						contradiction
+17446								A dog is laying on the ground in front of a Chinese food restaurant.	A dog is laying on the ground in front of a Japanese food restaurant.						contradiction
+17447								A dog is laying on the ground in front of a Chinese food restaurant.	A dog is laying on the ground in front of a Vietnamese food restaurant.						contradiction
+17448								A dog is laying on the ground in front of a Chinese food restaurant.	A dog is laying on the ground in front of a Thai food restaurant.						contradiction
+17449								A dog is laying on the ground in front of a Chinese food restaurant.	A dog is laying on the ground in front of a North Korean food restaurant.						contradiction
+14785								Three women are drinking wine.	Three women are drinking whisky.						contradiction
+14786								Three women are drinking wine.	Three women are drinking tequila.						contradiction
+14787								Three women are drinking wine.	Three women are drinking champagne.						contradiction
+14788								Three women are drinking wine.	Three women are drinking cider.						contradiction
+14789								Three women are drinking wine.	Three women are drinking vodka.						contradiction
+11435								A man and a woman walk down the street near the restaurant.	A man and a man walk down the street near the restaurant.						contradiction
+11436								A man and a woman walk down the street near the restaurant.	A man and a woman walk up the street near the restaurant.						contradiction
+11437								A man and a woman walk down the street near the restaurant.	A man and a woman walk down the street far away from the restaurant.						contradiction
+11438								A man and a woman walk down the street near the restaurant.	A man and a woman walk down the street far from the restaurant.						contradiction
+11439								A man and a woman walk down the street near the restaurant.	A man and a woman walk down the road near the restaurant.						entailment
+16085								A boy dressed in khaki shorts and a red shirt runs on a beach with green, white and blue structures and a half moon behind him.	A boy dressed in khaki shorts and a silver shirt runs on a beach with green, white and blue structures and a half moon behind him.						contradiction
+16086								A boy dressed in khaki shorts and a red shirt runs on a beach with green, white and blue structures and a half moon behind him.	A boy dressed in khaki shorts and a red shirt runs on a beach with green, white and blue structures and a half sun behind him.						contradiction
+16087								A boy dressed in khaki shorts and a red shirt runs on a beach with green, white and blue structures and a half moon behind him.	A boy dressed in khaki shorts and a red shirt runs on a beach with silver, white and blue structures and a half moon behind him.						contradiction
+16088								A boy dressed in khaki shorts and a red shirt runs on a beach with green, white and blue structures and a half moon behind him.	A boy dressed in khaki shorts and a pink shirt runs on a beach with green, white and blue structures and a half moon behind him.						contradiction
+16089								A boy dressed in khaki shorts and a red shirt runs on a beach with green, white and blue structures and a half moon behind him.	A boy dressed in khaki shorts and a red shirt runs on a beach with white, white and blue structures and a half moon behind him.						contradiction
+18295								The dog is chewing his bone in the living room.	The dog is chewing his bone in the bedroom.						contradiction
+18296								The dog is chewing his bone in the living room.	The dog is chewing his bone in the courtroom.						contradiction
+18297								The dog is chewing his bone in the living room.	The dog is chewing his bone in the garage.						contradiction
+18298								The dog is chewing his bone in the living room.	The dog is chewing his bone in the dining room.						contradiction
+18299								The dog is chewing his bone in the living room.	The dog is chewing his bone in the classroom.						contradiction
+13730								Couple sitting on patio outside restaurant having some wine.	Couple sitting on patio outside restaurant having some beer.						contradiction
+13732								Couple sitting on patio outside restaurant having some wine.	Couple sitting on patio outside restaurant having some champagne.						contradiction
+13733								Couple sitting on patio outside restaurant having some wine.	Couple sitting on patio outside restaurant having some vodka.						contradiction
+13734								Couple sitting on patio outside restaurant having some wine.	Couple sitting on patio outside restaurant having some whisky.						contradiction
+17840								Motorbikes, cars, big trucks and people share the rode in India.	Motorbikes, cars, big trucks and people share the rode in North Korea.						contradiction
+17841								Motorbikes, cars, big trucks and people share the rode in India.	Motorbikes, cars, big trucks and people share the rode in Singapore.						contradiction
+17842								Motorbikes, cars, big trucks and people share the rode in India.	Motorbikes, cars, big trucks and people share the rode in Malaysia.						contradiction
+17843								Motorbikes, cars, big trucks and people share the rode in India.	Motorbikes, cars, big trucks and people share the rode in Vietnam.						contradiction
+17844								Motorbikes, cars, big trucks and people share the rode in India.	Motorbikes, cars, big trucks and people share the rode in Thailand.						contradiction
+10030								A small group of people and an animal walk on a dirt road in a woods.	A small group of people and an animal walk on a dirt street in a woods.						entailment
+10031								A small group of people and an animal walk on a dirt road in a woods.	A big group of people and an animal walk on a dirt road in a woods.						contradiction
+10033								A small group of people and an animal walk on a dirt road in a woods.	A tiny group of people and an animal walk on a dirt road in a woods.						entailment
+10034								A small group of people and an animal walk on a dirt road in a woods.	A little group of people and an animal walk on a dirt road in a woods.						entailment
+11360								the two dogs stand near the water	the 4 dogs stand near the water						contradiction
+11361								the two dogs stand near the water	the 3 dogs stand near the water						contradiction
+11362								the two dogs stand near the water	the two dogs stand far away from the water						contradiction
+11363								the two dogs stand near the water	the 5 dogs stand near the water						contradiction
+11364								the two dogs stand near the water	the two dogs stand far from the water						contradiction
+15485								Three Indian women were doing their laundry in the river.	Three South Korean women were doing their laundry in the river.						contradiction
+15486								Three Indian women were doing their laundry in the river.	Three Thai women were doing their laundry in the river.						contradiction
+15487								Three Indian women were doing their laundry in the river.	Three North Korean women were doing their laundry in the river.						contradiction
+15488								Three Indian women were doing their laundry in the river.	Three Vietnamese women were doing their laundry in the river.						contradiction
+15489								Three Indian women were doing their laundry in the river.	Three Indonesian women were doing their laundry in the river.						contradiction
+14110								The little girl is sitting on a small wicker chair wearing a cute yellow and white dress.	The small girl is sitting on a small wicker chair wearing a cute yellow and white dress.						entailment
+14111								The little girl is sitting on a small wicker chair wearing a cute yellow and white dress.	The little girl is sitting on a little wicker chair wearing a cute yellow and white dress.						entailment
+14112								The little girl is sitting on a small wicker chair wearing a cute yellow and white dress.	The little girl is sitting on a small wicker chair wearing a cute yellow and silver dress.						contradiction
+14113								The little girl is sitting on a small wicker chair wearing a cute yellow and white dress.	The tiny girl is sitting on a small wicker chair wearing a cute yellow and white dress.						entailment
+18695								A street scene in Japan showing a storefront.	A street scene in China showing a storefront.						contradiction
+18696								A street scene in Japan showing a storefront.	A street scene in India showing a storefront.						contradiction
+18697								A street scene in Japan showing a storefront.	A street scene in Vietnam showing a storefront.						contradiction
+18698								A street scene in Japan showing a storefront.	A road scene in Japan showing a storefront.						entailment
+18699								A street scene in Japan showing a storefront.	A street scene in Thailand showing a storefront.						contradiction
+16100								A skinny person drinking beer.	A skinny person drinking tequila.						contradiction
+16101								A skinny person drinking beer.	A skinny person drinking cider.						contradiction
+16102								A skinny person drinking beer.	A skinny person drinking whisky.						contradiction
+16103								A skinny person drinking beer.	A skinny person drinking gin.						contradiction
+16104								A skinny person drinking beer.	A skinny person drinking vodka.						contradiction
+11845								A big dog is mistaking the small dog as an enemy.	A small dog is mistaking the small dog as an enemy.						contradiction
+11846								A big dog is mistaking the small dog as an enemy.	A big dog is mistaking the great dog as an enemy.						contradiction
+11847								A big dog is mistaking the small dog as an enemy.	A big dog is mistaking the small dog as a friend.						contradiction
+11848								A big dog is mistaking the small dog as an enemy.	A big dog is mistaking the small dog as an ally.						contradiction
+11849								A big dog is mistaking the small dog as an enemy.	A big dog is mistaking the big dog as an enemy.						contradiction
+13620								The 2 girls have just found a pair of pretty colored turtles.	The 5 girls have just found a pair of pretty colored turtles.						contradiction
+13621								The 2 girls have just found a pair of pretty colored turtles.	The 10 girls have just found a pair of pretty colored turtles.						contradiction
+13622								The 2 girls have just found a pair of pretty colored turtles.	The 4 girls have just found a pair of pretty colored turtles.						contradiction
+13623								The 2 girls have just found a pair of pretty colored turtles.	The 11 girls have just found a pair of pretty colored turtles.						contradiction
+13624								The 2 girls have just found a pair of pretty colored turtles.	The 9 girls have just found a pair of pretty colored turtles.						contradiction
+15425								A man jiggles bowling pins for the first time	A man jiggles bowling pins for the 1st time						entailment
+15426								A man jiggles bowling pins for the first time	A man jiggles bowling pins for the 11th time						contradiction
+15427								A man jiggles bowling pins for the first time	A man jiggles bowling pins for the tenth time						contradiction
+15428								A man jiggles bowling pins for the first time	A man jiggles bowling pins for the twentieth time						contradiction
+15429								A man jiggles bowling pins for the first time	A man jiggles bowling pins for the 8th time						contradiction
+16890								The man lives in Thailand.	The man lives in Vietnam.						contradiction
+16891								The man lives in Thailand.	The man lives in Singapore.						contradiction
+16892								The man lives in Thailand.	The man lives in Malaysia.						contradiction
+16893								The man lives in Thailand.	The man lives in North Korea.						contradiction
+16894								The man lives in Thailand.	The man lives in Japan.						contradiction
+17620								A woman in all black going into a subway during nighttime.	A woman in all white going into a subway during nighttime.						contradiction
+17621								A woman in all black going into a subway during nighttime.	A woman in all green going into a subway during nighttime.						contradiction
+17622								A woman in all black going into a subway during nighttime.	A woman in all blue going into a subway during nighttime.						contradiction
+17623								A woman in all black going into a subway during nighttime.	A woman in all black going into a subway during daytime.						contradiction
+17624								A woman in all black going into a subway during nighttime.	A woman in some black going into a subway during nighttime.						contradiction
+18335								A man and woman are walking in a restaurant that has signs in Chinese.	A man and woman are walking in a restaurant that has signs in South Korean.						contradiction
+18336								A man and woman are walking in a restaurant that has signs in Chinese.	A man and woman are walking in a restaurant that has signs in Thai.						contradiction
+18337								A man and woman are walking in a restaurant that has signs in Chinese.	A man and woman are walking in a restaurant that has signs in Indonesian.						contradiction
+18338								A man and woman are walking in a restaurant that has signs in Chinese.	A man and woman are walking in a restaurant that has signs in Vietnamese.						contradiction
+18339								A man and woman are walking in a restaurant that has signs in Chinese.	A man and woman are walking in a restaurant that has signs in North Korean.						contradiction
+17300								A singer draws on a window in a brick wall.	A singer draws on a window in a cement wall.						contradiction
+17301								A singer draws on a window in a brick wall.	A singer draws on a window in a glass wall.						contradiction
+17302								A singer draws on a window in a brick wall.	A singer draws on a window in a bronze wall.						contradiction
+17303								A singer draws on a window in a brick wall.	A singer draws on a window in a plastic wall.						contradiction
+17304								A singer draws on a window in a brick wall.	A singer draws on a window in a wood wall.						contradiction
+17845								There are boys in the kitchen.	There are boys in the dining room.						contradiction
+17846								There are boys in the kitchen.	There are boys in the classroom.						contradiction
+17847								There are boys in the kitchen.	There are boys in the courtroom.						contradiction
+17848								There are boys in the kitchen.	There are boys in the prison cell.						contradiction
+17849								There are boys in the kitchen.	There are boys in the bedroom.						contradiction
+15340								The two women are sworn enemies.	The seven women are sworn enemies.						contradiction
+15341								The two women are sworn enemies.	The 9 women are sworn enemies.						contradiction
+15342								The two women are sworn enemies.	The twelve women are sworn enemies.						contradiction
+15343								The two women are sworn enemies.	The 11 women are sworn enemies.						contradiction
+15344								The two women are sworn enemies.	The eight women are sworn enemies.						contradiction
+17195								A man looking down from the second floor of a building.	A man looking down from the thirteenth floor of a building.						contradiction
+17196								A man looking down from the second floor of a building.	A man looking down from the 50th floor of a building.						contradiction
+17197								A man looking down from the second floor of a building.	A man looking down from the 14th floor of a building.						contradiction
+17198								A man looking down from the second floor of a building.	A man looking down from the 20th floor of a building.						contradiction
+17199								A man looking down from the second floor of a building.	A man looking down from the 100th floor of a building.						contradiction
+12255								Two men are running in different directions on a path in the woods near two people walking a dog on a bridge.	Two men are running in different directions on a path in the woods far away from two people walking a dog on a bridge.						contradiction
+12256								Two men are running in different directions on a path in the woods near two people walking a dog on a bridge.	Two men are running in different directions on a path in the woods near eight people walking a dog on a bridge.						contradiction
+12257								Two men are running in different directions on a path in the woods near two people walking a dog on a bridge.	Two men are running in different directions on a path in the woods far from two people walking a dog on a bridge.						contradiction
+12258								Two men are running in different directions on a path in the woods near two people walking a dog on a bridge.	Two men are running in different directions on a path in the woods near 10 people walking a dog on a bridge.						contradiction
+12259								Two men are running in different directions on a path in the woods near two people walking a dog on a bridge.	Two men are running in different directions on a path in the woods near 6 people walking a dog on a bridge.						contradiction
+12570								There is water close to the woman.	There is water close to the man.						contradiction
+12571								There is water close to the woman.	There is water far away from the woman.						contradiction
+12573								There is water close to the woman.	There is water near the woman.						entailment
+12574								There is water close to the woman.	There is water far from the woman.						contradiction
+15715								Lifeguards teaching local 3rd graders how to swim at pool.	Lifeguards teaching local fourth graders how to swim at pool.						contradiction
+15716								Lifeguards teaching local 3rd graders how to swim at pool.	Lifeguards teaching local third graders how to swim at pool.						entailment
+15717								Lifeguards teaching local 3rd graders how to swim at pool.	Lifeguards teaching local first graders how to swim at pool.						contradiction
+15718								Lifeguards teaching local 3rd graders how to swim at pool.	Lifeguards teaching local sixth graders how to swim at pool.						contradiction
+15719								Lifeguards teaching local 3rd graders how to swim at pool.	Lifeguards teaching local second graders how to swim at pool.						contradiction
+15660								A group of students in China.	A group of students in Singapore.						contradiction
+15661								A group of students in China.	A group of students in Thailand.						contradiction
+15662								A group of students in China.	A group of students in Malaysia.						contradiction
+15663								A group of students in China.	A group of students in North Korea.						contradiction
+15664								A group of students in China.	A group of students in Vietnam.						contradiction
+18906								A dark-haired boy is smiling as a dark-haired girl buries him in the sand.	A dark-haired boy is smiling as a dark-haired girl buries him in the glass.						contradiction
+15555								The man is seated at a table drinking beer.	The man is seated at a table drinking vodka.						contradiction
+15556								The man is seated at a table drinking beer.	The man is seated at a table drinking whisky.						contradiction
+15557								The man is seated at a table drinking beer.	The man is seated at a table drinking cider.						contradiction
+15558								The man is seated at a table drinking beer.	The man is seated at a table drinking tequila.						contradiction
+15559								The man is seated at a table drinking beer.	The man is seated at a table drinking gin.						contradiction
+11515								A man playing scrabble with carrots, celery, onions, limes, apples and cauliflower, while his opponent loses.	A man playing scrabble with carrots, celery, tomatoes, limes, apples and cauliflower, while his opponent loses.						contradiction
+11516								A man playing scrabble with carrots, celery, onions, limes, apples and cauliflower, while his opponent loses.	A man playing scrabble with carrots, pumpkin, onions, limes, apples and cauliflower, while his opponent loses.						contradiction
+11518								A man playing scrabble with carrots, celery, onions, limes, apples and cauliflower, while his opponent loses.	A man playing scrabble with carrots, celery, eggplants, limes, apples and cauliflower, while his opponent loses.						contradiction
+11519								A man playing scrabble with carrots, celery, onions, limes, apples and cauliflower, while his opponent loses.	A man playing scrabble with carrots, potato, onions, limes, apples and cauliflower, while his opponent loses.						contradiction
+18850								The man is sleeping in cave in Mexico.	The man is sleeping in cave in Peru.						contradiction
+18851								The man is sleeping in cave in Mexico.	The man is sleeping in cave in Brazil.						contradiction
+18852								The man is sleeping in cave in Mexico.	The man is sleeping in cave in Spain.						contradiction
+18853								The man is sleeping in cave in Mexico.	The man is sleeping in cave in Venezuela.						contradiction
+18854								The man is sleeping in cave in Mexico.	The man is sleeping in cave in Argentina.						contradiction
+10020								A young girl jumps off the hands of a man in a pool near the ocean.	An old girl jumps off the hands of a man in a pool near the ocean.						contradiction
+10021								A young girl jumps off the hands of a man in a pool near the ocean.	A young girl jumps off the hands of a man in a pool far from the ocean.						contradiction
+10022								A young girl jumps off the hands of a man in a pool near the ocean.	A young boy jumps off the hands of a man in a pool near the ocean.						contradiction
+10023								A young girl jumps off the hands of a man in a pool near the ocean.	A senior girl jumps off the hands of a man in a pool near the ocean.						contradiction
+10024								A young girl jumps off the hands of a man in a pool near the ocean.	A young girl jumps off the hands of a man in a pool far away from the ocean.						contradiction
+11240								A little girl dislikes her brother's throw of the football.	A big girl dislikes her brother's throw of the football.						contradiction
+11241								A little girl dislikes her brother's throw of the football.	A tiny girl dislikes her brother's throw of the football.						entailment
+11242								A little girl dislikes her brother's throw of the football.	A great girl dislikes her brother's throw of the football.						contradiction
+11243								A little girl dislikes her brother's throw of the football.	A large girl dislikes her brother's throw of the football.						contradiction
+11244								A little girl dislikes her brother's throw of the football.	A little girl loves her brother's throw of the football.						contradiction
+13286								Three children frolic in sand.	Three children frolic in glass.						contradiction
+18730								Four people are sitting on blue and green couches, while a fifth man sitting aside looks on, underneath a sprawling red tree.	Four people are sitting on blue and green couches, while a tenth man sitting aside looks on, underneath a sprawling red tree.						contradiction
+18731								Four people are sitting on blue and green couches, while a fifth man sitting aside looks on, underneath a sprawling red tree.	Four people are sitting on blue and green couches, while a 20th man sitting aside looks on, underneath a sprawling red tree.						contradiction
+18732								Four people are sitting on blue and green couches, while a fifth man sitting aside looks on, underneath a sprawling red tree.	Four people are sitting on blue and green couches, while a 5th man sitting aside looks on, underneath a sprawling red tree.						entailment
+18733								Four people are sitting on blue and green couches, while a fifth man sitting aside looks on, underneath a sprawling red tree.	Four people are sitting on blue and green couches, while a sixth man sitting aside looks on, underneath a sprawling red tree.						contradiction
+18734								Four people are sitting on blue and green couches, while a fifth man sitting aside looks on, underneath a sprawling red tree.	Four people are sitting on blue and green couches, while a 9th man sitting aside looks on, underneath a sprawling red tree.						contradiction
+16211								A woman in a black cap and outfit sits in the sand.	A woman in a black cap and outfit sits in the glass.						contradiction
+10555								A group of about eight people wearing different colored, numbered sport shirts are all sitting very close to the ground on what appears to be go-carts or specialized race cars.	A group of about 11 people wearing different colored, numbered sport shirts are all sitting very close to the ground on what appears to be go-carts or specialized race cars.						contradiction
+10556								A group of about eight people wearing different colored, numbered sport shirts are all sitting very close to the ground on what appears to be go-carts or specialized race cars.	A group of about ten people wearing different colored, numbered sport shirts are all sitting very close to the ground on what appears to be go-carts or specialized race cars.						contradiction
+10557								A group of about eight people wearing different colored, numbered sport shirts are all sitting very close to the ground on what appears to be go-carts or specialized race cars.	A group of about eight people wearing different colored, numbered sport shirts are all sitting very far away from the ground on what appears to be go-carts or specialized race cars.						contradiction
+10558								A group of about eight people wearing different colored, numbered sport shirts are all sitting very close to the ground on what appears to be go-carts or specialized race cars.	A group of about 12 people wearing different colored, numbered sport shirts are all sitting very close to the ground on what appears to be go-carts or specialized race cars.						contradiction
+10559								A group of about eight people wearing different colored, numbered sport shirts are all sitting very close to the ground on what appears to be go-carts or specialized race cars.	A group of about eight people wearing different colored, numbered sport shirts are all sitting very far from the ground on what appears to be go-carts or specialized race cars.						contradiction
+15815								The men are working to fix the rook that is leaking over the bathroom.	The men are working to fix the rook that is leaking over the courtroom.						contradiction
+15816								The men are working to fix the rook that is leaking over the bathroom.	The men are working to fix the rook that is leaking over the common room.						contradiction
+15817								The men are working to fix the rook that is leaking over the bathroom.	The men are working to fix the rook that is leaking over the classroom.						contradiction
+15818								The men are working to fix the rook that is leaking over the bathroom.	The men are working to fix the rook that is leaking over the bedroom.						contradiction
+15819								The men are working to fix the rook that is leaking over the bathroom.	The men are working to fix the rook that is leaking over the dining room.						contradiction
+17422								A group of children are walking in the sand.	A group of children are walking in the glass.						contradiction
+17245								A person is trying to come in first place in a marathon.	A person is trying to come in 7th place in a marathon.						contradiction
+17246								A person is trying to come in first place in a marathon.	A person is trying to come in tenth place in a marathon.						contradiction
+17247								A person is trying to come in first place in a marathon.	A person is trying to come in 40th place in a marathon.						contradiction
+17248								A person is trying to come in first place in a marathon.	A person is trying to come in thirteenth place in a marathon.						contradiction
+17249								A person is trying to come in first place in a marathon.	A person is trying to come in sixteenth place in a marathon.						contradiction
+14845								The brown dog is eating in the kitchen.	The brown dog is eating in the prison cell.						contradiction
+14846								The brown dog is eating in the kitchen.	The brown dog is eating in the dining room.						contradiction
+14847								The brown dog is eating in the kitchen.	The brown dog is eating in the bedroom.						contradiction
+14848								The brown dog is eating in the kitchen.	The brown dog is eating in the courtroom.						contradiction
+14849								The brown dog is eating in the kitchen.	The brown dog is eating in the classroom.						contradiction
+10035								two large dogs run in the mountains near the river	5 large dogs run in the mountains near the river						contradiction
+10036								two large dogs run in the mountains near the river	three large dogs run in the mountains near the river						contradiction
+10037								two large dogs run in the mountains near the river	8 large dogs run in the mountains near the river						contradiction
+10038								two large dogs run in the mountains near the river	two large dogs run in the mountains far away from the river						contradiction
+10039								two large dogs run in the mountains near the river	two large dogs run in the mountains far from the river						contradiction
+14488								Boy with a blue towel and white hat holding goggles and a snokel is playing on the sand.	Boy with a blue towel and white hat holding goggles and a snokel is playing on the glass.						contradiction
+16525								the three ladies sat together for hours	the five ladies sat together for hours						contradiction
+16526								the three ladies sat together for hours	the 8 ladies sat together for hours						contradiction
+16527								the three ladies sat together for hours	the six ladies sat together for hours						contradiction
+16528								the three ladies sat together for hours	the 5 ladies sat together for hours						contradiction
+16529								the three ladies sat together for hours	the 10 ladies sat together for hours						contradiction
+17450								A young man is talking with an older woman while drinking wine.	A young man is talking with an older woman while drinking tequila.						contradiction
+17451								A young man is talking with an older woman while drinking wine.	A young man is talking with an older woman while drinking whisky.						contradiction
+17452								A young man is talking with an older woman while drinking wine.	A young man is talking with an older woman while drinking gin.						contradiction
+17453								A young man is talking with an older woman while drinking wine.	A young man is talking with an older woman while drinking cider.						contradiction
+14495								The woman is in her own kitchen.	The woman is in her own living room.						contradiction
+14496								The woman is in her own kitchen.	The woman is in her own classroom.						contradiction
+14497								The woman is in her own kitchen.	The woman is in her own dining room.						contradiction
+14498								The woman is in her own kitchen.	The woman is in her own bedroom.						contradiction
+14499								The woman is in her own kitchen.	The woman is in her own prison cell.						contradiction
+17365								A yellow sign advertises insurance in Spanish.	A yellow sign advertises insurance in Portuguese.						contradiction
+17366								A yellow sign advertises insurance in Spanish.	A yellow sign advertises insurance in Chilean.						contradiction
+17367								A yellow sign advertises insurance in Spanish.	A yellow sign advertises insurance in Greek.						contradiction
+17368								A yellow sign advertises insurance in Spanish.	A yellow sign advertises insurance in Italian.						contradiction
+17369								A yellow sign advertises insurance in Spanish.	A yellow sign advertises insurance in Brazilian.						contradiction
+10315								A girl wearing a yellow shirt standing in front of her yellow truck raising her arms up and pointing toward a bird flying in the sky outside of a forest.	A girl wearing a green shirt standing in front of her green truck raising her arms up and pointing toward a bird flying in the sky outside of a forest.						contradiction
+10316								A girl wearing a yellow shirt standing in front of her yellow truck raising her arms up and pointing toward a bird flying in the sky outside of a forest.	A girl wearing a yellow shirt standing in front of her yellow truck raising her arms up and pointing toward a bird flying in the sky inside of a forest.						contradiction
+10317								A girl wearing a yellow shirt standing in front of her yellow truck raising her arms up and pointing toward a bird flying in the sky outside of a forest.	A girl wearing a grey shirt standing in front of her grey truck raising her arms up and pointing toward a bird flying in the sky outside of a forest.						contradiction
+10318								A girl wearing a yellow shirt standing in front of her yellow truck raising her arms up and pointing toward a bird flying in the sky outside of a forest.	A girl wearing a yellow shirt standing behind her yellow truck raising her arms up and pointing toward a bird flying in the sky outside of a forest.						contradiction
+10319								A girl wearing a yellow shirt standing in front of her yellow truck raising her arms up and pointing toward a bird flying in the sky outside of a forest.	A girl wearing a yellow shirt sitting in front of her yellow truck raising her arms up and pointing toward a bird flying in the sky outside of a forest.						contradiction
+14655								The toddlers are in the living room.	The toddlers are in the classroom.						contradiction
+14656								The toddlers are in the living room.	The toddlers are in the dining room.						contradiction
+14657								The toddlers are in the living room.	The toddlers are in the bedroom.						contradiction
+14658								The toddlers are in the living room.	The toddlers are in the courtroom.						contradiction
+14659								The toddlers are in the living room.	The toddlers are in the garage.						contradiction
+10080								A young girl draws a picture of the planet Saturn	A young girl draws a picture of the planet Neptune						contradiction
+10081								A young girl draws a picture of the planet Saturn	A young girl draws a picture of the planet Uranus						contradiction
+10082								A young girl draws a picture of the planet Saturn	A young girl draws a picture of the planet Jupiter						contradiction
+10083								A young girl draws a picture of the planet Saturn	A young girl draws a picture of the planet Pluto						contradiction
+10084								A young girl draws a picture of the planet Saturn	A young girl draws a picture of the planet Mars						contradiction
+13875								the two men are playing tennis	the 7 men are playing tennis						contradiction
+13876								the two men are playing tennis	the 9 men are playing tennis						contradiction
+13877								the two men are playing tennis	the seven men are playing tennis						contradiction
+13878								the two men are playing tennis	the eight men are playing tennis						contradiction
+13879								the two men are playing tennis	the 10 men are playing tennis						contradiction
+16245								A marketplace that sells food in Thailand.	A marketplace that sells food in Vietnam.						contradiction
+16246								A marketplace that sells food in Thailand.	A marketplace that sells food in India.						contradiction
+16247								A marketplace that sells food in Thailand.	A marketplace that buys food in Thailand.						contradiction
+16248								A marketplace that sells food in Thailand.	A marketplace that sells food in Malaysia.						contradiction
+16249								A marketplace that sells food in Thailand.	A marketplace that sells food in North Korea.						contradiction
+10715								The young boy is smiling and holding a coke.	The senior boy is smiling and holding a coke.						contradiction
+10716								The young boy is smiling and holding a coke.	The young boy is smiling and holding a hot chocolate.						contradiction
+10717								The young boy is smiling and holding a coke.	The old boy is smiling and holding a coke.						contradiction
+10718								The young boy is smiling and holding a coke.	The young boy is smiling and holding a coffee.						contradiction
+10719								The young boy is smiling and holding a coke.	The young boy is smiling and holding a tea.						contradiction
+17825								There is a man drinking beer.	There is a man drinking cider.						contradiction
+17826								There is a man drinking beer.	There is a man drinking gin.						contradiction
+17827								There is a man drinking beer.	There is a man drinking champagne.						contradiction
+17828								There is a man drinking beer.	There is a man drinking whisky.						contradiction
+17829								There is a man drinking beer.	There is a man drinking tequila.						contradiction
+16335								A child jumps into his pool while his mother watches from the kitchen.	A child jumps into his pool while his mother watches from the garage.						contradiction
+16336								A child jumps into his pool while his mother watches from the kitchen.	A child jumps into his pool while his mother watches from the courtroom.						contradiction
+16337								A child jumps into his pool while his mother watches from the kitchen.	A child jumps into his pool while his mother watches from the prison cell.						contradiction
+16338								A child jumps into his pool while his mother watches from the kitchen.	A child jumps into his pool while his mother watches from the dining room.						contradiction
+16339								A child jumps into his pool while his mother watches from the kitchen.	A child jumps into his pool while his mother watches from the classroom.						contradiction
+12460								A woman dropped her belongings and is seated in a colorful chair is near some plants.	A man dropped her belongings and is seated in a colorful chair is near some plants.						contradiction
+12461								A woman dropped her belongings and is seated in a colorful chair is near some plants.	A woman dropped her belongings and is seated in a colorful chair is far away from some plants.						contradiction
+12462								A woman dropped her belongings and is seated in a colorful chair is near some plants.	A woman dropped her belongings and is seated in a colorful chair is far from some plants.						contradiction
+12463								A woman dropped her belongings and is seated in a colorful chair is near some plants.	A woman dropped her belongings and is seated in a white chair is near some plants.						contradiction
+12464								A woman dropped her belongings and is seated in a colorful chair is near some plants.	A woman dropped her belongings and is seated in a colorful chair is close to some plants.						entailment
+12505								The boy is near a little car.	The boy is close to a little car.						entailment
+12508								The boy is near a little car.	The boy is near a small car.						entailment
+12509								The boy is near a little car.	The boy is near a tiny car.						entailment
+15085								The man is holding the stone.	The man is holding the cement.						contradiction
+15086								The man is holding the stone.	The man is holding the titanium.						contradiction
+15087								The man is holding the stone.	The man is holding the bronze.						contradiction
+15088								The man is holding the stone.	The man is holding the copper.						contradiction
+15089								The man is holding the stone.	The man is holding the aluminium.						contradiction
+18365								A race dog is running for first	A race dog is running for 50th						contradiction
+18366								A race dog is running for first	A race dog is running for 20th						contradiction
+18367								A race dog is running for first	A race dog is running for 40th						contradiction
+18368								A race dog is running for first	A race dog is running for twentieth						contradiction
+18369								A race dog is running for first	A race dog is running for tenth						contradiction
+11765								A woman in an orange sari sits in front of a low wall among baskets of vegetables that include potatoes.	A woman in an orange sari sits in front of a low wall among baskets of vegetables that include onions.						contradiction
+11766								A woman in an orange sari sits in front of a low wall among baskets of vegetables that include potatoes.	A woman in an orange sari sits in front of a full wall among baskets of vegetables that include potatoes.						contradiction
+11767								A woman in an orange sari sits in front of a low wall among baskets of vegetables that include potatoes.	A woman in an orange sari sits in front of an upper wall among baskets of vegetables that include potatoes.						contradiction
+11768								A woman in an orange sari sits in front of a low wall among baskets of vegetables that include potatoes.	A woman in an orange sari sits in front of a low wall among baskets of vegetables that include tomatoes.						contradiction
+11769								A woman in an orange sari sits in front of a low wall among baskets of vegetables that include potatoes.	A man in an orange sari sits in front of a low wall among baskets of vegetables that include potatoes.						contradiction
+17540								A little boy looking at the moon through binoculars.	A small boy looking at the moon through binoculars.						entailment
+17541								A little boy looking at the moon through binoculars.	A little boy looking at the sun through binoculars.						contradiction
+17542								A little boy looking at the moon through binoculars.	A great boy looking at the moon through binoculars.						contradiction
+17543								A little boy looking at the moon through binoculars.	A little girl looking at the moon through binoculars.						contradiction
+13773								The quarterback tries to get a first down.	The quarterback tries to get a 1st down.						entailment
+11915								a girl jumps over three others near the ocean	a girl jumps over six others near the ocean						contradiction
+11916								a girl jumps over three others near the ocean	a girl jumps over three others far from the ocean						contradiction
+11917								a girl jumps over three others near the ocean	a girl jumps over nine others near the ocean						contradiction
+11918								a girl jumps over three others near the ocean	a girl jumps over three others far away from the ocean						contradiction
+11919								a girl jumps over three others near the ocean	a girl jumps over 2 others near the ocean						contradiction
+17225								young children drinking beer	young children drinking cider						contradiction
+17226								young children drinking beer	young children drinking gin						contradiction
+17227								young children drinking beer	young children drinking champagne						contradiction
+17228								young children drinking beer	young children drinking tequila						contradiction
+17229								young children drinking beer	young children drinking vodka						contradiction
+12392								The woman is very happy	The woman is very joyful						entailment
+12393								The woman is very happy	The woman is very sad						contradiction
+12394								The woman is very happy	The woman is very delighted						entailment
+10615								A small black dog is sitting on the couch.	A little black dog is sitting on the couch.						entailment
+10616								A small black dog is sitting on the couch.	A small brown dog is sitting on the couch.						contradiction
+10617								A small black dog is sitting on the couch.	A tiny black dog is sitting on the couch.						entailment
+10618								A small black dog is sitting on the couch.	A small black dog is sitting on the sofa.						entailment
+10619								A small black dog is sitting on the couch.	A giant black dog is sitting on the couch.						contradiction
+15260								The two men are using brooms and mops to clean the stairs.	The ten men are using brooms and mops to clean the stairs.						contradiction
+15261								The two men are using brooms and mops to clean the stairs.	The eleven men are using brooms and mops to clean the stairs.						contradiction
+15262								The two men are using brooms and mops to clean the stairs.	The nine men are using brooms and mops to clean the stairs.						contradiction
+15263								The two men are using brooms and mops to clean the stairs.	The seven men are using brooms and mops to clean the stairs.						contradiction
+15264								The two men are using brooms and mops to clean the stairs.	The twelve men are using brooms and mops to clean the stairs.						contradiction
+12945								Man holding a little girl in a street.	Man holding a giant girl in a street.						contradiction
+12946								Man holding a little girl in a street.	Man holding a tiny girl in a street.						entailment
+12947								Man holding a little girl in a street.	Man holding a small girl in a street.						entailment
+12948								Man holding a little girl in a street.	Man holding a little girl in a road.						entailment
+16480								Kids outside a third world school.	Kids outside a 10th world school.						contradiction
+16481								Kids outside a third world school.	Kids outside a 20th world school.						contradiction
+16482								Kids outside a third world school.	Kids outside a tenth world school.						contradiction
+16483								Kids outside a third world school.	Kids outside a 15th world school.						contradiction
+16484								Kids outside a third world school.	Kids outside a sixth world school.						contradiction
+18345								The couple pushed the strollers across the wood bridge and the dogs followed.	The couple pushed the strollers across the cement bridge and the dogs followed.						contradiction
+18346								The couple pushed the strollers across the wood bridge and the dogs followed.	The couple pushed the strollers across the sand bridge and the dogs followed.						contradiction
+18347								The couple pushed the strollers across the wood bridge and the dogs followed.	The couple pushed the strollers across the glass bridge and the dogs followed.						contradiction
+18348								The couple pushed the strollers across the wood bridge and the dogs followed.	The couple pushed the strollers across the brick bridge and the dogs followed.						contradiction
+18349								The couple pushed the strollers across the wood bridge and the dogs followed.	The couple pushed the strollers across the stone bridge and the dogs followed.						contradiction
+17000								A group of guys drinking beer	A group of guys drinking champagne						contradiction
+17001								A group of guys drinking beer	A group of guys drinking vodka						contradiction
+17002								A group of guys drinking beer	A group of guys drinking gin						contradiction
+17003								A group of guys drinking beer	A group of guys drinking whisky						contradiction
+17004								A group of guys drinking beer	A group of guys drinking cider						contradiction
+11630								There is a piece of art near the man with white hair.	There is a piece of art far from the man with white hair.						contradiction
+11631								There is a piece of art near the man with white hair.	There is a piece of art far away from the man with white hair.						contradiction
+11632								There is a piece of art near the man with white hair.	There is a piece of art near the man with silver hair.						contradiction
+11633								There is a piece of art near the man with white hair.	There is a piece of art near the man with yellow hair.						contradiction
+11634								There is a piece of art near the man with white hair.	There is a piece of art near the man with black hair.						contradiction
+10725								A dark dog jumps across the snow outside near the woods.	A good dog jumps across the snow outside near the woods.						contradiction
+10726								A dark dog jumps across the snow outside near the woods.	A dark dog jumps across the snow outside far away from the woods.						contradiction
+10728								A dark dog jumps across the snow outside near the woods.	A white dog jumps across the snow outside near the woods.						contradiction
+10729								A dark dog jumps across the snow outside near the woods.	A dark dog jumps across the snow outside far from the woods.						contradiction
+16710								the two men are wearing black and white while riding in a blue bus	the seven men are wearing black and white while riding in a blue bus						contradiction
+16711								the two men are wearing black and white while riding in a blue bus	the six men are wearing black and white while riding in a blue bus						contradiction
+16712								the two men are wearing black and white while riding in a blue bus	the nine men are wearing black and white while riding in a blue bus						contradiction
+16713								the two men are wearing black and white while riding in a blue bus	the twelve men are wearing black and white while riding in a blue bus						contradiction
+16714								the two men are wearing black and white while riding in a blue bus	the eleven men are wearing black and white while riding in a blue bus						contradiction
+10305								A city street corner with a silver car parked in the street near the buildings.	A city street corner with a red car parked in the street near the buildings.						contradiction
+10306								A city street corner with a silver car parked in the street near the buildings.	A city street corner with a silver car parked in the street far away from the buildings.						contradiction
+10307								A city street corner with a silver car parked in the street near the buildings.	A city street corner with a green car parked in the street near the buildings.						contradiction
+10308								A city street corner with a silver car parked in the street near the buildings.	A city street corner with an orange car parked in the street near the buildings.						contradiction
+10309								A city street corner with a silver car parked in the street near the buildings.	A city street corner with a silver car parked in the street far from the buildings.						contradiction
+16370								Men and women visiting a marketplace in India that sells clothes	Men and women visiting a marketplace in Malaysia that sells clothes						contradiction
+16371								Men and women visiting a marketplace in India that sells clothes	Men and women visiting a marketplace in Vietnam that sells clothes						contradiction
+16372								Men and women visiting a marketplace in India that sells clothes	Men and women visiting a marketplace in China that sells clothes						contradiction
+16373								Men and women visiting a marketplace in India that sells clothes	Men and women visiting a marketplace in Thailand that sells clothes						contradiction
+16374								Men and women visiting a marketplace in India that sells clothes	Men and women visiting a marketplace in India that buys clothes						contradiction
+14735								3 men are boating.	5 men are boating.						contradiction
+14736								3 men are boating.	7 men are boating.						contradiction
+14737								3 men are boating.	11 men are boating.						contradiction
+14738								3 men are boating.	6 men are boating.						contradiction
+14739								3 men are boating.	9 men are boating.						contradiction
+16590								A man sits in a restaurant drinking while his friend is in the bathroom.	A man sits in a restaurant drinking while his friend is in the classroom.						contradiction
+16591								A man sits in a restaurant drinking while his friend is in the bathroom.	A man sits in a restaurant drinking while his friend is in the common room.						contradiction
+16592								A man sits in a restaurant drinking while his friend is in the bathroom.	A man sits in a restaurant drinking while his friend is in the dining room.						contradiction
+16593								A man sits in a restaurant drinking while his friend is in the bathroom.	A man sits in a restaurant drinking while his friend is in the courtroom.						contradiction
+16594								A man sits in a restaurant drinking while his friend is in the bathroom.	A man sits in a restaurant drinking while his friend is in the bedroom.						contradiction
+10740								A young man stands on a cliff facing the west.	A senior man stands on a cliff facing the west.						contradiction
+10741								A young man stands on a cliff facing the west.	A late man stands on a cliff facing the west.						contradiction
+10742								A young man stands on a cliff facing the west.	A young man stands on a cliff facing the east.						contradiction
+10743								A young man stands on a cliff facing the west.	An old man stands on a cliff facing the west.						contradiction
+10744								A young man stands on a cliff facing the west.	An elderly man stands on a cliff facing the west.						contradiction
+18895								A woman sits on a stone wall and talks on her phone.	A woman sits on a wood wall and talks on her phone.						contradiction
+18896								A woman sits on a stone wall and talks on her phone.	A woman sits on a bronze wall and talks on her phone.						contradiction
+18897								A woman sits on a stone wall and talks on her phone.	A woman sits on a glass wall and talks on her phone.						contradiction
+18898								A woman sits on a stone wall and talks on her phone.	A woman sits on a plastic wall and talks on her phone.						contradiction
+18899								A woman sits on a stone wall and talks on her phone.	A woman sits on a cement wall and talks on her phone.						contradiction
+15915								The man and woman look very happy.	The man and woman look very pleased.						entailment
+15916								The man and woman look very happy.	The man and woman look very joyful.						entailment
+15917								The man and woman look very happy.	The man and woman look very delighted.						entailment
+15918								The man and woman look very happy.	The man and woman look very unfortunate.						contradiction
+15919								The man and woman look very happy.	The man and woman look very glad.						entailment
+13915								Employees are in the hallway.	Employees are in the prison cell.						contradiction
+13916								Employees are in the hallway.	Employees are in the classroom.						contradiction
+13917								Employees are in the hallway.	Employees are in the dining room.						contradiction
+13918								Employees are in the hallway.	Employees are in the courtroom.						contradiction
+13919								Employees are in the hallway.	Employees are in the common room.						contradiction
+11625								A woman holds a baby with two others near.	A woman holds a baby with 7 others near.						contradiction
+11629								A woman holds a baby with two others near.	A woman holds a baby with eleven others near.						contradiction
+11411								A man playing scrabble with carrots, celery, onions, limes, apples and cauliflower in the pictures while his opponent has rocks spelled out on his tray.	A man playing scrabble with carrots, celery, pumpkins, limes, apples and cauliflower in the pictures while his opponent has rocks spelled out on his tray.						contradiction
+11412								A man playing scrabble with carrots, celery, onions, limes, apples and cauliflower in the pictures while his opponent has rocks spelled out on his tray.	A man playing scrabble with carrots, celery, eggplants, limes, apples and cauliflower in the pictures while his opponent has rocks spelled out on his tray.						contradiction
+11414								A man playing scrabble with carrots, celery, onions, limes, apples and cauliflower in the pictures while his opponent has rocks spelled out on his tray.	A man playing scrabble with carrots, eggplant, onions, limes, apples and cauliflower in the pictures while his opponent has rocks spelled out on his tray.						contradiction
+12870								Two young men play roller hockey on an indoor rink while a referee looks on near the goal net.	Two senior men play roller hockey on an indoor rink while a referee looks on near the goal net.						contradiction
+12871								Two young men play roller hockey on an indoor rink while a referee looks on near the goal net.	Two young men play roller hockey on an indoor rink while a referee looks on far from the goal net.						contradiction
+12872								Two young men play roller hockey on an indoor rink while a referee looks on near the goal net.	Two old men play roller hockey on an indoor rink while a referee looks on near the goal net.						contradiction
+12873								Two young men play roller hockey on an indoor rink while a referee looks on near the goal net.	Two young men play roller hockey on an indoor rink while a referee looks on far away from the goal net.						contradiction
+12874								Two young men play roller hockey on an indoor rink while a referee looks on near the goal net.	Two young men play roller hockey on an outdoor rink while a referee looks on near the goal net.						contradiction
+11055								A large group of Asian children sit on or stand near the steps waiting for their friends.	A large group of Asian children sit on or stand far from the steps waiting for their friends.						contradiction
+11056								A large group of Asian children sit on or stand near the steps waiting for their friends.	A tiny group of Asian children sit on or stand near the steps waiting for their friends.						contradiction
+11057								A large group of Asian children sit on or stand near the steps waiting for their friends.	A large group of Asian children sit on or stand far away from the steps waiting for their friends.						contradiction
+11059								A large group of Asian children sit on or stand near the steps waiting for their friends.	A little group of Asian children sit on or stand near the steps waiting for their friends.						contradiction
+17890								The adults are eating sushi at the Japanese restaurant.	The adults are eating sushi at the North Korean restaurant.						contradiction
+17891								The adults are eating sushi at the Japanese restaurant.	The adults are eating sushi at the Thai restaurant.						contradiction
+17892								The adults are eating sushi at the Japanese restaurant.	The adults are eating sushi at the Vietnamese restaurant.						contradiction
+17893								The adults are eating sushi at the Japanese restaurant.	The adults are eating sushi at the South Korean restaurant.						contradiction
+17894								The adults are eating sushi at the Japanese restaurant.	The adults are eating sushi at the Chinese restaurant.						contradiction
+16655								A woman wears a black hat with an american flag on it and looks at the camera scarily.	A woman wears a yellow hat with an american flag on it and looks at the camera scarily.						contradiction
+16656								A woman wears a black hat with an american flag on it and looks at the camera scarily.	A woman wears a brown hat with an american flag on it and looks at the camera scarily.						contradiction
+16657								A woman wears a black hat with an american flag on it and looks at the camera scarily.	A woman wears a pink hat with an american flag on it and looks at the camera scarily.						contradiction
+16658								A woman wears a black hat with an american flag on it and looks at the camera scarily.	A woman wears an orange hat with an american flag on it and looks at the camera scarily.						contradiction
+16659								A woman wears a black hat with an american flag on it and looks at the camera scarily.	A woman wears a purple hat with an american flag on it and looks at the camera scarily.						contradiction
+16653								The man builds a sand castle.	The man builds a glass castle.						contradiction
+11315								The family is working to plant tomatoes, potatoes, and lettuce in their newly hoed garden.	The family is working to plant tomatoes, pumpkins, and lettuce in their newly hoed garden.						contradiction
+11316								The family is working to plant tomatoes, potatoes, and lettuce in their newly hoed garden.	The family is working to plant tomatoes, vegetables, and lettuce in their newly hoed garden.						entailment
+11317								The family is working to plant tomatoes, potatoes, and lettuce in their newly hoed garden.	The family is working to plant tomatoes, carrots, and lettuce in their newly hoed garden.						contradiction
+11318								The family is working to plant tomatoes, potatoes, and lettuce in their newly hoed garden.	The family is working to plant tomatoes, eggplants, and lettuce in their newly hoed garden.						contradiction
+11319								The family is working to plant tomatoes, potatoes, and lettuce in their newly hoed garden.	The family is working to plant tomatoes, avocados, and lettuce in their newly hoed garden.						contradiction
+10560								A little girl making arts and crafts with small umbrellas and corks.	A small girl making arts and crafts with small umbrellas and corks.						entailment
+10561								A little girl making arts and crafts with small umbrellas and corks.	A little son making arts and crafts with small umbrellas and corks.						contradiction
+10562								A little girl making arts and crafts with small umbrellas and corks.	A little girl making arts and crafts with little umbrellas and corks.						entailment
+10563								A little girl making arts and crafts with small umbrellas and corks.	A tiny girl making arts and crafts with small umbrellas and corks.						entailment
+10564								A little girl making arts and crafts with small umbrellas and corks.	A big girl making arts and crafts with small umbrellas and corks.						contradiction
+10735								A man near some meat.	A man close to some meat.						entailment
+14415								Two handymen breaking down a brick wall.	Two handymen breaking down a cement wall.						contradiction
+14416								Two handymen breaking down a brick wall.	Two handymen breaking down a wood wall.						contradiction
+14417								Two handymen breaking down a brick wall.	Two handymen breaking down a plastic wall.						contradiction
+14418								Two handymen breaking down a brick wall.	Two handymen breaking down a bronze wall.						contradiction
+14419								Two handymen breaking down a brick wall.	Two handymen breaking down a glass wall.						contradiction
+12135								A man and his girlfriend sitting outside holding empty glass beer bottles.	A man and his girlfriend sitting outside holding empty glass champagne bottles.						contradiction
+12136								A man and his girlfriend sitting outside holding empty glass beer bottles.	A man and his girlfriend sitting outside holding empty glass whisky bottles.						contradiction
+12137								A man and his girlfriend sitting outside holding empty glass beer bottles.	A man and his girlfriend sitting outside holding full glass beer bottles.						contradiction
+12138								A man and his girlfriend sitting outside holding empty glass beer bottles.	A man and his girlfriend sitting outside holding empty glass vodka bottles.						contradiction
+12139								A man and his girlfriend sitting outside holding empty glass beer bottles.	A man and his girlfriend sitting outside holding empty glass wine bottles.						contradiction
+11145								A man near some sand.	A man far away from some sand.						contradiction
+11147								A man near some sand.	A man far from some sand.						contradiction
+11148								A man near some sand.	A man close to some sand.						entailment
+11149								A man near some sand.	A woman near some sand.						contradiction
+16885								A man in striped shorts and a blue hat is working on a yacht, and the sun is setting behind him.	A man in striped shorts and a pink hat is working on a yacht, and the sun is setting behind him.						contradiction
+16886								A man in striped shorts and a blue hat is working on a yacht, and the sun is setting behind him.	A man in striped shorts and a grey hat is working on a yacht, and the sun is setting behind him.						contradiction
+16887								A man in striped shorts and a blue hat is working on a yacht, and the sun is setting behind him.	A man in striped shorts and a blue hat is working on a yacht, and the moon is setting behind him.						contradiction
+16888								A man in striped shorts and a blue hat is working on a yacht, and the sun is setting behind him.	A man in striped shorts and a green hat is working on a yacht, and the sun is setting behind him.						contradiction
+18515								A woman in a yellow shirt is carrying two bags.	A woman in a purple shirt is carrying two bags.						contradiction
+18516								A woman in a yellow shirt is carrying two bags.	A woman in a silver shirt is carrying two bags.						contradiction
+18517								A woman in a yellow shirt is carrying two bags.	A woman in a brown shirt is carrying two bags.						contradiction
+18518								A woman in a yellow shirt is carrying two bags.	A woman in an orange shirt is carrying two bags.						contradiction
+18519								A woman in a yellow shirt is carrying two bags.	A woman in a grey shirt is carrying two bags.						contradiction
+14410								Several uniformed men carrying flags and guns are leading a parade contingent along a small town street.	Several uniformed men carrying flags and guns are leading a parade contingent along a tiny town street.						entailment
+14411								Several uniformed men carrying flags and guns are leading a parade contingent along a small town street.	Several uniformed men carrying flags and guns are leading a parade contingent along a large town street.						contradiction
+14412								Several uniformed men carrying flags and guns are leading a parade contingent along a small town street.	Several uniformed men carrying flags and guns are leading a parade contingent along a little town street.						entailment
+14413								Several uniformed men carrying flags and guns are leading a parade contingent along a small town street.	Several uniformed men carrying flags and guns are leading a parade contingent along a small town road.						entailment
+14414								Several uniformed men carrying flags and guns are leading a parade contingent along a small town street.	Several uniformed men carrying flags and guns are leading a parade contingent along a wide town street.						contradiction
+13806								Many people in the city street running in a marathon, next to the start line.	Many people in the city road running in a marathon, next to the start line.						entailment
+17800								Three women in white coats is watching a fourth man pipe frosting into cookies.	Three women in white coats is watching a 12th man pipe frosting into cookies.						contradiction
+17801								Three women in white coats is watching a fourth man pipe frosting into cookies.	Three women in white coats is watching a 10th man pipe frosting into cookies.						contradiction
+17802								Three women in white coats is watching a fourth man pipe frosting into cookies.	Three women in white coats is watching a tenth man pipe frosting into cookies.						contradiction
+17803								Three women in white coats is watching a fourth man pipe frosting into cookies.	Three women in white coats is watching a 6th man pipe frosting into cookies.						contradiction
+17804								Three women in white coats is watching a fourth man pipe frosting into cookies.	Three women in white coats is watching a 20th man pipe frosting into cookies.						contradiction
+13375								Two Chinese women at the cash and rap store third women counting her money for her purchase.	Two South Korean women at the cash and rap store third women counting her money for her purchase.						contradiction
+13376								Two Chinese women at the cash and rap store third women counting her money for her purchase.	Two Thai women at the cash and rap store third women counting her money for her purchase.						contradiction
+13377								Two Chinese women at the cash and rap store third women counting her money for her purchase.	Two Indonesian women at the cash and rap store third women counting her money for her purchase.						contradiction
+13378								Two Chinese women at the cash and rap store third women counting her money for her purchase.	Two Vietnamese women at the cash and rap store third women counting her money for her purchase.						contradiction
+13379								Two Chinese women at the cash and rap store third women counting her money for her purchase.	Two North Korean women at the cash and rap store third women counting her money for her purchase.						contradiction
+18260								An alternatively dressed woman stands on a small wooden platform with an accordion and watches another creatively dressed woman play the violin with various other people on the street behind them.	An alternatively dressed woman stands on a little wooden platform with an accordion and watches another creatively dressed woman play the violin with various other people on the street behind them.						entailment
+18261								An alternatively dressed woman stands on a small wooden platform with an accordion and watches another creatively dressed woman play the violin with various other people on the street behind them.	An alternatively dressed woman stands on a double wooden platform with an accordion and watches another creatively dressed woman play the violin with various other people on the street behind them.						contradiction
+18262								An alternatively dressed woman stands on a small wooden platform with an accordion and watches another creatively dressed woman play the violin with various other people on the street behind them.	An alternatively dressed woman stands on a tiny wooden platform with an accordion and watches another creatively dressed woman play the violin with various other people on the street behind them.						entailment
+18263								An alternatively dressed woman stands on a small wooden platform with an accordion and watches another creatively dressed woman play the violin with various other people on the street behind them.	An alternatively dressed woman stands on a large wooden platform with an accordion and watches another creatively dressed woman play the violin with various other people on the street behind them.						contradiction
+18264								An alternatively dressed woman stands on a small wooden platform with an accordion and watches another creatively dressed woman play the violin with various other people on the street behind them.	An alternatively dressed woman stands on a small wooden platform with an accordion and watches another creatively dressed woman play the violin with various other people on the road behind them.						entailment
+18670								Two people are in the kitchen.	Two people are in the bedroom.						contradiction
+18671								Two people are in the kitchen.	Two people are in the courtroom.						contradiction
+18672								Two people are in the kitchen.	Two people are in the prison cell.						contradiction
+18673								Two people are in the kitchen.	Two people are in the dining room.						contradiction
+18674								Two people are in the kitchen.	Two people are in the classroom.						contradiction
+17250								A boy eats pizza in the living room.	A boy eats pizza in the garage.						contradiction
+17251								A boy eats pizza in the living room.	A boy eats pizza in the courtroom.						contradiction
+17252								A boy eats pizza in the living room.	A boy eats pizza in the bedroom.						contradiction
+17253								A boy eats pizza in the living room.	A boy eats pizza in the dining room.						contradiction
+17254								A boy eats pizza in the living room.	A boy eats pizza in the classroom.						contradiction
+15910								People dig through a construction site in China.	People dig through a construction site in Malaysia.						contradiction
+15911								People dig through a construction site in China.	People dig through a construction site in Singapore.						contradiction
+15912								People dig through a construction site in China.	People dig through a construction site in Vietnam.						contradiction
+15913								People dig through a construction site in China.	People dig through a construction site in North Korea.						contradiction
+15914								People dig through a construction site in China.	People dig through a construction site in Thailand.						contradiction
+10485								A little boy stands near the sprinklers and squeals.	A big boy stands near the sprinklers and squeals.						contradiction
+10486								A little boy stands near the sprinklers and squeals.	A little boy stands far away from the sprinklers and squeals.						contradiction
+10487								A little boy stands near the sprinklers and squeals.	A little boy stands far from the sprinklers and squeals.						contradiction
+10489								A little boy stands near the sprinklers and squeals.	A small boy stands near the sprinklers and squeals.						entailment
+17131								a busy city in Japan	a busy city in Vietnam						contradiction
+17132								a busy city in Japan	a busy city in Singapore						contradiction
+17133								a busy city in Japan	a busy city in North Korea						contradiction
+17134								a busy city in Japan	a busy city in Malaysia						contradiction
+11910								Two men one in a yellow shirt with his hat off and the other bent over with his hand near the ground with trees, white buckets and a green field in the background.	Two men one in a yellow shirt with his hat off and the other bent over with his hand far from the ground with trees, white buckets and a green field in the background.						contradiction
+11911								Two men one in a yellow shirt with his hat off and the other bent over with his hand near the ground with trees, white buckets and a green field in the background.	Two men one in a purple shirt with his hat off and the other bent over with his hand near the ground with trees, white buckets and a green field in the background.						contradiction
+11912								Two men one in a yellow shirt with his hat off and the other bent over with his hand near the ground with trees, white buckets and a green field in the background.	Two men one in a brown shirt with his hat off and the other bent over with his hand near the ground with trees, white buckets and a green field in the background.						contradiction
+11913								Two men one in a yellow shirt with his hat off and the other bent over with his hand near the ground with trees, white buckets and a green field in the background.	Two men one in a yellow shirt with his hat off and the other bent over with his hand far away from the ground with trees, white buckets and a green field in the background.						contradiction
+11914								Two men one in a yellow shirt with his hat off and the other bent over with his hand near the ground with trees, white buckets and a green field in the background.	Two men one in a yellow shirt with his hat off and the other bent over with his hand near the ground with trees, yellow buckets and a green field in the background.						contradiction
+12740								A man in a white suit stands near the gyro meat	A man in a white suit stands far from the gyro meat						contradiction
+12741								A man in a white suit stands near the gyro meat	A man in a white suit stands far away from the gyro meat						contradiction
+12742								A man in a white suit stands near the gyro meat	A man in a red suit stands near the gyro meat						contradiction
+12743								A man in a white suit stands near the gyro meat	A man in a silver suit stands near the gyro meat						contradiction
+12744								A man in a white suit stands near the gyro meat	A man in a black suit stands near the gyro meat						contradiction
+17371								A boy just finished making a sand castle.	A boy just finished making a glass castle.						contradiction
+18046								Three dogs race each other to reach the ball first.	Three dogs race each other to reach the ball 1st.						entailment
+14420								An Indian group are praying on a deck by water.	A North Korean group are praying on a deck by water.						contradiction
+14421								An Indian group are praying on a deck by water.	A Japanese group are praying on a deck by water.						contradiction
+14422								An Indian group are praying on a deck by water.	An Indonesian group are praying on a deck by water.						contradiction
+14423								An Indian group are praying on a deck by water.	A Chinese group are praying on a deck by water.						contradiction
+14424								An Indian group are praying on a deck by water.	A South Korean group are praying on a deck by water.						contradiction
+10345								A fisherman drags a red net through the water close to the beach.	A fisherman drags a red net through the water far away from the beach.						contradiction
+10347								A fisherman drags a red net through the water close to the beach.	A fisherman drags a blue net through the water close to the beach.						contradiction
+10348								A fisherman drags a red net through the water close to the beach.	A fisherman drags a yellow net through the water close to the beach.						contradiction
+10349								A fisherman drags a red net through the water close to the beach.	A fisherman drags a red net through the water far from the beach.						contradiction
+16980								A guy is in the living room.	A guy is in the bedroom.						contradiction
+16981								A guy is in the living room.	A guy is in the classroom.						contradiction
+16982								A guy is in the living room.	A guy is in the dining room.						contradiction
+16983								A guy is in the living room.	A guy is in the courtroom.						contradiction
+16984								A guy is in the living room.	A guy is in the garage.						contradiction
+11530								A lady is near two dogs.	A lady is near seven dogs.						contradiction
+11531								A lady is near two dogs.	A lady is far from two dogs.						contradiction
+11533								A lady is near two dogs.	A lady is near 12 dogs.						contradiction
+11534								A lady is near two dogs.	A lady is far away from two dogs.						contradiction
+18615								The people are drinking wine.	The people are drinking tequila.						contradiction
+18616								The people are drinking wine.	The people are drinking whisky.						contradiction
+18617								The people are drinking wine.	The people are drinking vodka.						contradiction
+18618								The people are drinking wine.	The people are drinking cider.						contradiction
+18619								The people are drinking wine.	The people are drinking gin.						contradiction
+10121								The water is not very deep near the beach.	The water is not very deep far away from the beach.						contradiction
+10123								The water is not very deep near the beach.	The water is not very deep far from the beach.						contradiction
+10124								The water is not very deep near the beach.	The water is not very shallow near the beach.						contradiction
+15670								Three men are approached by a fourth man.	Three men are approached by a ninth man.						contradiction
+15671								Three men are approached by a fourth man.	Three men are approached by a 1st man.						contradiction
+15672								Three men are approached by a fourth man.	Three men are approached by a 3rd man.						contradiction
+15673								Three men are approached by a fourth man.	Three men are approached by a 12th man.						contradiction
+15674								Three men are approached by a fourth man.	Three men are approached by a 9th man.						contradiction
+14675								The girl and the boy are dating and she is really happy	The girl and the boy are dating and she is really miserable						contradiction
+14676								The girl and the boy are dating and she is really happy	The girl and the boy are dating and she is really delighted						entailment
+14677								The girl and the boy are dating and she is really happy	The girl and the boy are dating and she is really unfortunate						contradiction
+14678								The girl and the boy are dating and she is really happy	The girl and the boy are dating and she is really glad						entailment
+14679								The girl and the boy are dating and she is really happy	The girl and the boy are dating and she is really pleased						entailment
+14440								Two women are drinking beer.	Two women are drinking vodka.						contradiction
+14441								Two women are drinking beer.	Two women are drinking cider.						contradiction
+14442								Two women are drinking beer.	Two women are drinking champagne.						contradiction
+14443								Two women are drinking beer.	Two women are drinking tequila.						contradiction
+14444								Two women are drinking beer.	Two women are drinking whisky.						contradiction
+14671								Chinese man looking into an automobile dealer at a car.	Thai man looking into an automobile dealer at a car.						contradiction
+14672								Chinese man looking into an automobile dealer at a car.	North Korean man looking into an automobile dealer at a car.						contradiction
+14673								Chinese man looking into an automobile dealer at a car.	South Korean man looking into an automobile dealer at a car.						contradiction
+14674								Chinese man looking into an automobile dealer at a car.	Vietnamese man looking into an automobile dealer at a car.						contradiction
+13765								He is in a bedroom.	He is in a common room.						contradiction
+13766								He is in a bedroom.	He is in a kitchen.						contradiction
+13767								He is in a bedroom.	He is in a garage.						contradiction
+13768								He is in a bedroom.	He is in a dining room.						contradiction
+13769								He is in a bedroom.	He is in a living room.						contradiction
+18795								Two women are at a restaurant drinking wine.	Two women are at a restaurant drinking cider.						contradiction
+18796								Two women are at a restaurant drinking wine.	Two women are at a restaurant drinking vodka.						contradiction
+18797								Two women are at a restaurant drinking wine.	Two women are at a restaurant drinking tequila.						contradiction
+18798								Two women are at a restaurant drinking wine.	Two women are at a restaurant drinking whisky.						contradiction
+18799								Two women are at a restaurant drinking wine.	Two women are at a restaurant drinking gin.						contradiction
+17565								A man and woman are in the kitchen	A man and woman are in the courtroom						contradiction
+17566								A man and woman are in the kitchen	A man and woman are in the bathroom						contradiction
+17567								A man and woman are in the kitchen	A man and woman are in the prison cell						contradiction
+17568								A man and woman are in the kitchen	A man and woman are in the classroom						contradiction
+17569								A man and woman are in the kitchen	A man and woman are in the bedroom						contradiction
+14940								The tennis player is wearing red.	The tennis player is wearing silver.						contradiction
+14941								The tennis player is wearing red.	The tennis player is wearing grey.						contradiction
+14942								The tennis player is wearing red.	The tennis player is wearing purple.						contradiction
+14943								The tennis player is wearing red.	The tennis player is wearing beige.						contradiction
+14944								The tennis player is wearing red.	The tennis player is wearing orange.						contradiction
+12840								The crowd is near the two men in white	The crowd is far away from the two men in white						contradiction
+12841								The crowd is near the two men in white	The crowd is near the twelve men in white						contradiction
+12842								The crowd is near the two men in white	The crowd is near the six men in white						contradiction
+12843								The crowd is near the two men in white	The crowd is near the five men in white						contradiction
+12844								The crowd is near the two men in white	The crowd is far from the two men in white						contradiction
+10645								There is a little girl helping her father	There is a small girl helping her father						entailment
+10646								There is a little girl helping her father	There is a giant girl helping her father						contradiction
+10647								There is a little girl helping her father	There is a little girl helping her dad						entailment
+10648								There is a little girl helping her father	There is a tiny girl helping her father						entailment
+12500								A girl, perhaps around five, wearing white shorts, red and white top and carrying a red balloon, is standing outside of a wooden building, looking inside.	A girl, perhaps around five, wearing white shorts, red and white top and carrying a red balloon, is standing inside of a wooden building, looking inside.						contradiction
+12501								A girl, perhaps around five, wearing white shorts, red and white top and carrying a red balloon, is standing outside of a wooden building, looking inside.	A girl, perhaps around five, wearing green shorts, red and green top and carrying a red balloon, is standing outside of a wooden building, looking inside.						contradiction
+12502								A girl, perhaps around five, wearing white shorts, red and white top and carrying a red balloon, is standing outside of a wooden building, looking inside.	A girl, perhaps around five, wearing white shorts, red and white top and carrying a red balloon, is standing outside of a wooden building, looking outside.						contradiction
+12503								A girl, perhaps around five, wearing white shorts, red and white top and carrying a red balloon, is standing outside of a wooden building, looking inside.	A girl, perhaps around twelve, wearing white shorts, red and white top and carrying a red balloon, is standing outside of a wooden building, looking inside.						contradiction
+12504								A girl, perhaps around five, wearing white shorts, red and white top and carrying a red balloon, is standing outside of a wooden building, looking inside.	A girl, perhaps around 8, wearing white shorts, red and white top and carrying a red balloon, is standing outside of a wooden building, looking inside.						contradiction
+10825								A man has a cane and is near two other people.	A man has a cane and is near 10 other people.						contradiction
+10826								A man has a cane and is near two other people.	A man has a cane and is close to two other people.						entailment
+10827								A man has a cane and is near two other people.	A man has a cane and is far away from two other people.						contradiction
+10828								A man has a cane and is near two other people.	A man has a cane and is far from two other people.						contradiction
+10829								A man has a cane and is near two other people.	A man has a cane and is near two familiar people.						neutral
+11790								Construction workers enjoy a meal after an early start in the frame of a house.	Construction workers enjoy a meal after a late start in the frame of a house.						contradiction
+15615								A man is wearing traditional Japanese clothing.	A man is wearing traditional Indian clothing.						contradiction
+15616								A man is wearing traditional Japanese clothing.	A man is wearing traditional Vietnamese clothing.						contradiction
+15617								A man is wearing traditional Japanese clothing.	A man is wearing traditional Chinese clothing.						contradiction
+15618								A man is wearing traditional Japanese clothing.	A man is wearing traditional North Korean clothing.						contradiction
+15619								A man is wearing traditional Japanese clothing.	A man is wearing traditional South Korean clothing.						contradiction
+13205								A high school band prepares for their first big concert.	A high school band prepares for their fourth big concert.						contradiction
+13206								A high school band prepares for their first big concert.	A high school band prepares for their sixth big concert.						contradiction
+13207								A high school band prepares for their first big concert.	A high school band prepares for their seventh big concert.						contradiction
+13208								A high school band prepares for their first big concert.	A high school band prepares for their second big concert.						contradiction
+13209								A high school band prepares for their first big concert.	A high school band prepares for their fifth big concert.						contradiction
+10125								The little girl is near a pool.	The tiny girl is near a pool.						entailment
+10126								The little girl is near a pool.	The big girl is near a pool.						contradiction
+10127								The little girl is near a pool.	The giant girl is near a pool.						contradiction
+10128								The little girl is near a pool.	The small girl is near a pool.						entailment
+10129								The little girl is near a pool.	The little girl is close to a pool.						entailment
+16740								Two women in India, sitting near an ox.	Two women in Thailand, sitting near an ox.						contradiction
+16741								Two women in India, sitting near an ox.	Two women in Vietnam, sitting near an ox.						contradiction
+16742								Two women in India, sitting near an ox.	Two women in North Korea, sitting near an ox.						contradiction
+16743								Two women in India, sitting near an ox.	Two women in Malaysia, sitting near an ox.						contradiction
+16744								Two women in India, sitting near an ox.	Two women in Singapore, sitting near an ox.						contradiction
+18915								A young child wearing blue jeans and a white shirt is laying on the ground along side cut-out paper trees and a sun.	A young child wearing blue jeans and a silver shirt is laying on the ground along side cut-out paper trees and a sun.						contradiction
+18916								A young child wearing blue jeans and a white shirt is laying on the ground along side cut-out paper trees and a sun.	A young child wearing blue jeans and a purple shirt is laying on the ground along side cut-out paper trees and a sun.						contradiction
+18917								A young child wearing blue jeans and a white shirt is laying on the ground along side cut-out paper trees and a sun.	A young child wearing blue jeans and a brown shirt is laying on the ground along side cut-out paper trees and a sun.						contradiction
+18918								A young child wearing blue jeans and a white shirt is laying on the ground along side cut-out paper trees and a sun.	A young child wearing black jeans and a white shirt is laying on the ground along side cut-out paper trees and a sun.						contradiction
+18919								A young child wearing blue jeans and a white shirt is laying on the ground along side cut-out paper trees and a sun.	A young child wearing blue jeans and a white shirt is laying on the ground along side cut-out paper trees and a moon.						contradiction
+12030								Two law enforcement officers standing near one another supervise the crowd at the open air market.	Two law enforcement officers standing far away from one another supervise the crowd at the open air market.						contradiction
+12032								Two law enforcement officers standing near one another supervise the crowd at the open air market.	Two law enforcement officers standing far from one another supervise the crowd at the open air market.						contradiction
+12033								Two law enforcement officers standing near one another supervise the crowd at the open air market.	Two law enforcement officers sitting near one another supervise the crowd at the open air market.						contradiction
+12034								Two law enforcement officers standing near one another supervise the crowd at the open air market.	Two law enforcement officers running near one another supervise the crowd at the open air market.						contradiction
+18060								a girl looking at a dandelion for the first time	a girl looking at a dandelion for the 50th time						contradiction
+18061								a girl looking at a dandelion for the first time	a girl looking at a dandelion for the 9th time						contradiction
+18062								a girl looking at a dandelion for the first time	a girl looking at a dandelion for the 11th time						contradiction
+18063								a girl looking at a dandelion for the first time	a girl looking at a dandelion for the 7th time						contradiction
+18064								a girl looking at a dandelion for the first time	a girl looking at a dandelion for the 100th time						contradiction
+10515								The two kids play together often.	The 4 kids play together often.						contradiction
+10517								The two kids play together often.	The two kids play together always.						contradiction
+10518								The two kids play together often.	The 3 kids play together often.						contradiction
+10519								The two kids play together often.	The 6 kids play together often.						contradiction
+10745								A little girl balancing on a ledge on the side of the street.	A small girl balancing on a ledge on the side of the street.						entailment
+10747								A little girl balancing on a ledge on the side of the street.	A little girl balancing on a ledge on the side of the road.						entailment
+10748								A little girl balancing on a ledge on the side of the street.	A tiny girl balancing on a ledge on the side of the street.						entailment
+15170								A man wearing a Chinese flag sits on a stone monument and plays the banjo.	A man wearing an Indonesian flag sits on a stone monument and plays the banjo.						contradiction
+15171								A man wearing a Chinese flag sits on a stone monument and plays the banjo.	A man wearing a South Korean flag sits on a stone monument and plays the banjo.						contradiction
+15172								A man wearing a Chinese flag sits on a stone monument and plays the banjo.	A man wearing a Thai flag sits on a stone monument and plays the banjo.						contradiction
+15173								A man wearing a Chinese flag sits on a stone monument and plays the banjo.	A man wearing a North Korean flag sits on a stone monument and plays the banjo.						contradiction
+15174								A man wearing a Chinese flag sits on a stone monument and plays the banjo.	A man wearing a Japanese flag sits on a stone monument and plays the banjo.						contradiction
+14980								A man with a white shirt on with gray strips is sitting at a table eating and drinking wine.	A man with a white shirt on with gray strips is sitting at a table eating and drinking gin.						contradiction
+14981								A man with a white shirt on with gray strips is sitting at a table eating and drinking wine.	A man with a white shirt on with gray strips is sitting at a table eating and drinking tequila.						contradiction
+14982								A man with a white shirt on with gray strips is sitting at a table eating and drinking wine.	A man with a white shirt on with gray strips is sitting at a table eating and drinking champagne.						neutral
+14983								A man with a white shirt on with gray strips is sitting at a table eating and drinking wine.	A man with a white shirt on with gray strips is sitting at a table eating and drinking vodka.						contradiction
+14984								A man with a white shirt on with gray strips is sitting at a table eating and drinking wine.	A man with a white shirt on with gray strips is sitting at a table eating and drinking cider.						contradiction
+17095								An old Chinese woman is sitting with her cane.	An old South Korean woman is sitting with her cane.						contradiction
+17096								An old Chinese woman is sitting with her cane.	An old Indonesian woman is sitting with her cane.						contradiction
+17097								An old Chinese woman is sitting with her cane.	An old North Korean woman is sitting with her cane.						contradiction
+17098								An old Chinese woman is sitting with her cane.	An old Thai woman is sitting with her cane.						contradiction
+17099								An old Chinese woman is sitting with her cane.	An old Vietnamese woman is sitting with her cane.						contradiction
+11445								little girl trying to comb her mother.	tiny girl trying to comb her mother.						entailment
+11446								little girl trying to comb her mother.	little girl trying to comb her father.						contradiction
+11447								little girl trying to comb her mother.	big girl trying to comb her mother.						contradiction
+11448								little girl trying to comb her mother.	small girl trying to comb her mother.						entailment
+11449								little girl trying to comb her mother.	little girl trying to comb her mom.						entailment
+11295								A man in a blue shirt sits outside alone with a chessboard laid out in front of him.	A man in a blue shirt sits inside alone with a chessboard laid out in front of him.						contradiction
+11296								A man in a blue shirt sits outside alone with a chessboard laid out in front of him.	A man in a silver shirt sits outside alone with a chessboard laid out in front of him.						contradiction
+11297								A man in a blue shirt sits outside alone with a chessboard laid out in front of him.	A man in a grey shirt sits outside alone with a chessboard laid out in front of him.						contradiction
+11298								A man in a blue shirt sits outside alone with a chessboard laid out in front of him.	A man in a pink shirt sits outside alone with a chessboard laid out in front of him.						contradiction
+11299								A man in a blue shirt sits outside alone with a chessboard laid out in front of him.	A man in a blue shirt sits outside alone with a chessboard laid out behind him.						contradiction
+11405								A man playing scrabble with carrots, celery, onions, limes, apples and cauliflower in the pictures while his opponent has rocks spelled out on his tray.	A man playing scrabble with carrots, tomato, onions, limes, apples and cauliflower in the pictures while his opponent has rocks spelled out on his tray.						contradiction
+11406								A man playing scrabble with carrots, celery, onions, limes, apples and cauliflower in the pictures while his opponent has rocks spelled out on his tray.	A man playing scrabble with carrots, celery, potatoes, limes, apples and cauliflower in the pictures while his opponent has rocks spelled out on his tray.						contradiction
+11407								A man playing scrabble with carrots, celery, onions, limes, apples and cauliflower in the pictures while his opponent has rocks spelled out on his tray.	A man playing scrabble with carrots, celery, tomatoes, limes, apples and cauliflower in the pictures while his opponent has rocks spelled out on his tray.						contradiction
+11408								A man playing scrabble with carrots, celery, onions, limes, apples and cauliflower in the pictures while his opponent has rocks spelled out on his tray.	A man playing scrabble with carrots, pumpkin, onions, limes, apples and cauliflower in the pictures while his opponent has rocks spelled out on his tray.						contradiction
+11409								A man playing scrabble with carrots, celery, onions, limes, apples and cauliflower in the pictures while his opponent has rocks spelled out on his tray.	A man playing scrabble with carrots, avocado, onions, limes, apples and cauliflower in the pictures while his opponent has rocks spelled out on his tray.						contradiction
+14525								A woman is enjoying her tea in India.	A woman is enjoying her tea in Thailand.						contradiction
+14526								A woman is enjoying her tea in India.	A woman is enjoying her tea in Vietnam.						contradiction
+14527								A woman is enjoying her tea in India.	A woman is enjoying her tea in North Korea.						contradiction
+14528								A woman is enjoying her tea in India.	A woman is enjoying her tea in Malaysia.						contradiction
+14529								A woman is enjoying her tea in India.	A woman is enjoying her tea in Singapore.						contradiction
+15200								A young Japanese man does not like his picture taken.	A young South Korean man does not like his picture taken.						contradiction
+15201								A young Japanese man does not like his picture taken.	A young Thai man does not like his picture taken.						contradiction
+15202								A young Japanese man does not like his picture taken.	A young Indians man does not like his picture taken.						contradiction
+15203								A young Japanese man does not like his picture taken.	A young Vietnamese man does not like his picture taken.						contradiction
+15204								A young Japanese man does not like his picture taken.	A young Indonesian man does not like his picture taken.						contradiction
+17155								The people are in Greece.	The people are in Portugal.						contradiction
+17156								The people are in Greece.	The people are in Egypt.						contradiction
+17157								The people are in Greece.	The people are in Israel.						contradiction
+17158								The people are in Greece.	The people are in Turkey.						contradiction
+17159								The people are in Greece.	The people are in Syria.						contradiction
+12625								Someone in a red shirt and no shoes is sitting with their stuff near the road.	Someone in a black shirt and no shoes is sitting with their stuff near the road.						contradiction
+12626								Someone in a red shirt and no shoes is sitting with their stuff near the road.	Someone in a green shirt and no shoes is sitting with their stuff near the road.						contradiction
+12627								Someone in a red shirt and no shoes is sitting with their stuff near the road.	Someone in a blue shirt and no shoes is sitting with their stuff near the road.						contradiction
+12628								Someone in a red shirt and no shoes is sitting with their stuff near the road.	Someone in a red shirt and no shoes is sitting with their stuff far away from the road.						contradiction
+12629								Someone in a red shirt and no shoes is sitting with their stuff near the road.	Someone in a red shirt and no shoes is sitting with their stuff far from the road.						contradiction
+18585								Four people walking single file next to a large brick building.	Four people walking single file next to a large glass building.						contradiction
+18586								Four people walking single file next to a large brick building.	Four people walking single file next to a large sand building.						contradiction
+18587								Four people walking single file next to a large brick building.	Four people walking single file next to a large plastic building.						contradiction
+18588								Four people walking single file next to a large brick building.	Four people walking single file next to a large wood building.						contradiction
+18589								Four people walking single file next to a large brick building.	Four people walking single file next to a large cement building.						contradiction
+15250								Two guys are drinking beer.	Two guys are drinking whisky.						contradiction
+15251								Two guys are drinking beer.	Two guys are drinking cider.						contradiction
+15252								Two guys are drinking beer.	Two guys are drinking champagne.						contradiction
+15253								Two guys are drinking beer.	Two guys are drinking gin.						contradiction
+15254								Two guys are drinking beer.	Two guys are drinking tequila.						contradiction
+14450								People are sitting around drinking beer.	People are sitting around drinking tequila.						contradiction
+14451								People are sitting around drinking beer.	People are sitting around drinking whisky.						contradiction
+14452								People are sitting around drinking beer.	People are sitting around drinking vodka.						contradiction
+14453								People are sitting around drinking beer.	People are sitting around drinking champagne.						contradiction
+14454								People are sitting around drinking beer.	People are sitting around drinking gin.						contradiction
+16271								A boy looks startled as he falls in the sand.	A boy looks startled as he falls in the glass.						contradiction
+12296								A couple is sitting along side a canal and kissing, while a woman in red sits near them and looks uncomfortable.	A couple is sitting along side a canal and kissing, while a man in red sits near them and looks uncomfortable.						contradiction
+12297								A couple is sitting along side a canal and kissing, while a woman in red sits near them and looks uncomfortable.	A couple is sitting along side a canal and kissing, while a woman in red sits far from them and looks uncomfortable.						contradiction
+12298								A couple is sitting along side a canal and kissing, while a woman in red sits near them and looks uncomfortable.	A couple is sitting along side a canal and kissing, while a woman in red sits far away from them and looks uncomfortable.						contradiction
+12299								A couple is sitting along side a canal and kissing, while a woman in red sits near them and looks uncomfortable.	A couple is sitting along side a canal and kissing, while a woman in red sits close to them and looks uncomfortable.						entailment
+13420								The boy is in second grade.	The boy is in 9th grade.						contradiction
+13421								The boy is in second grade.	The boy is in 11th grade.						contradiction
+13422								The boy is in second grade.	The boy is in 16th grade.						contradiction
+13423								The boy is in second grade.	The boy is in 8th grade.						contradiction
+13424								The boy is in second grade.	The boy is in 7th grade.						contradiction
+11190								A little girl is standing on the street, holding a red bag.	A little girl is standing on the road, holding a red bag.						entailment
+11191								A little girl is standing on the street, holding a red bag.	A great girl is standing on the street, holding a red bag.						contradiction
+11192								A little girl is standing on the street, holding a red bag.	A tiny girl is standing on the street, holding a red bag.						entailment
+11193								A little girl is standing on the street, holding a red bag.	A small girl is standing on the street, holding a red bag.						entailment
+11194								A little girl is standing on the street, holding a red bag.	A big girl is standing on the street, holding a red bag.						contradiction
+18765								A Chinese family walks down the street.	A South Korean family walks down the street.						contradiction
+18766								A Chinese family walks down the street.	An Indonesian family walks down the street.						contradiction
+18767								A Chinese family walks down the street.	A Thai family walks down the street.						contradiction
+18768								A Chinese family walks down the street.	A North Korean family walks down the street.						contradiction
+18769								A Chinese family walks down the street.	A Vietnamese family walks down the street.						contradiction
+14255								Japanese people are at a bar.	North Korean people are at a bar.						contradiction
+14256								Japanese people are at a bar.	Vietnamese people are at a bar.						contradiction
+14257								Japanese people are at a bar.	Thai people are at a bar.						contradiction
+14259								Japanese people are at a bar.	South Korean people are at a bar.						contradiction
+13835								A little girl is looking at her mother.	A little girl is looking at her mom.						entailment
+13836								A little girl is looking at her mother.	A small girl is looking at her mother.						entailment
+13837								A little girl is looking at her mother.	A large girl is looking at her mother.						contradiction
+13838								A little girl is looking at her mother.	A tiny girl is looking at her mother.						entailment
+15860								The man is drilling the keg so he can drink beer.	The man is drilling the keg so he can drink vodka.						contradiction
+15861								The man is drilling the keg so he can drink beer.	The man is drilling the keg so he can drink whisky.						contradiction
+15862								The man is drilling the keg so he can drink beer.	The man is drilling the keg so he can drink champagne.						contradiction
+15863								The man is drilling the keg so he can drink beer.	The man is drilling the keg so he can drink cider.						contradiction
+15864								The man is drilling the keg so he can drink beer.	The man is drilling the keg so he can drink gin.						contradiction
+18095								girl drinks coke	girl drinks tea						contradiction
+18096								girl drinks coke	girl drinks coffee						contradiction
+18097								girl drinks coke	boy drinks coke						contradiction
+18098								girl drinks coke	girl drinks juice						contradiction
+18099								girl drinks coke	girl drinks hot chocolate						contradiction
+10990								A man stands at a podium while Nancy Pelosi and a crowd of others stand behind him in front of a building.	A man stands at a podium while Nancy Pelosi and a crowd of others lie behind him in front of a building.						contradiction
+10991								A man stands at a podium while Nancy Pelosi and a crowd of others stand behind him in front of a building.	A man stands at a podium while Nancy Pelosi and a crowd of others sit behind him in front of a building.						contradiction
+10992								A man stands at a podium while Nancy Pelosi and a crowd of others stand behind him in front of a building.	A man stands at a podium while Nancy Pelosi and a crowd of others stand behind him behind a building.						contradiction
+10993								A man stands at a podium while Nancy Pelosi and a crowd of others stand behind him in front of a building.	A man stands at a podium while Nancy Pelosi and a crowd of others stand in front of him in front of a building.						contradiction
+14880								two construction workers work in the sun.	12 construction workers work in the sun.						contradiction
+14881								two construction workers work in the sun.	five construction workers work in the sun.						contradiction
+14882								two construction workers work in the sun.	two construction workers work in the moon.						contradiction
+14883								two construction workers work in the sun.	eight construction workers work in the sun.						contradiction
+14884								two construction workers work in the sun.	7 construction workers work in the sun.						contradiction
+15990								A man is washing his hans in bathroom.	A man is washing his hans in classroom.						contradiction
+15991								A man is washing his hans in bathroom.	A man is washing his hans in courtroom.						contradiction
+15992								A man is washing his hans in bathroom.	A man is washing his hans in living room.						contradiction
+15993								A man is washing his hans in bathroom.	A man is washing his hans in common room.						contradiction
+15994								A man is washing his hans in bathroom.	A man is washing his hans in bedroom.						contradiction
+17560								An old woman on a cold day, outside a sports store somewhere in Brazil.	An old woman on a cold day, outside a sports store somewhere in Argentina.						contradiction
+17561								An old woman on a cold day, outside a sports store somewhere in Brazil.	An old woman on a cold day, outside a sports store somewhere in Spain.						contradiction
+17562								An old woman on a cold day, outside a sports store somewhere in Brazil.	An old woman on a cold day, outside a sports store somewhere in Mexico.						contradiction
+17563								An old woman on a cold day, outside a sports store somewhere in Brazil.	An old woman on a cold day, outside a sports store somewhere in Peru.						contradiction
+17564								An old woman on a cold day, outside a sports store somewhere in Brazil.	An old woman on a cold day, outside a sports store somewhere in Venezuela.						contradiction
+17215								The children are in the kitchen.	The children are in the prison cell.						contradiction
+17216								The children are in the kitchen.	The children are in the courtroom.						contradiction
+17217								The children are in the kitchen.	The children are in the garage.						contradiction
+17218								The children are in the kitchen.	The children are in the classroom.						contradiction
+17219								The children are in the kitchen.	The children are in the bedroom.						contradiction
+11260								A woman is selling potatoes, carrots and onions in front of a low wall.	A woman is selling potatoes, carrots and onions in front of a broad wall.						contradiction
+11261								A woman is selling potatoes, carrots and onions in front of a low wall.	A woman is selling potatoes, carrots and onions in front of an upper wall.						contradiction
+11262								A woman is selling potatoes, carrots and onions in front of a low wall.	A woman is selling vegetables, carrots and onions in front of a low wall.						entailment
+11263								A woman is selling potatoes, carrots and onions in front of a low wall.	A man is selling potatoes, carrots and onions in front of a low wall.						contradiction
+11264								A woman is selling potatoes, carrots and onions in front of a low wall.	A woman is selling potatoes, carrots and onions in front of a high wall.						contradiction
+14070								The two people are crawling towards the cows.	The eleven people are crawling towards the cows.						contradiction
+14071								The two people are crawling towards the cows.	The eight people are crawling towards the cows.						contradiction
+14072								The two people are crawling towards the cows.	The nine people are crawling towards the cows.						contradiction
+14073								The two people are crawling towards the cows.	The 7 people are crawling towards the cows.						contradiction
+14074								The two people are crawling towards the cows.	The twelve people are crawling towards the cows.						contradiction
+16305								Protesters are holding signs that say stop killing in Iran.	Protesters are holding signs that say go killing in Iran.						contradiction
+16306								Protesters are holding signs that say stop killing in Iran.	Protesters are holding signs that say stop killing in Iraq.						contradiction
+16307								Protesters are holding signs that say stop killing in Iran.	Protesters are holding signs that say stop killing in Pakistan.						contradiction
+16308								Protesters are holding signs that say stop killing in Iran.	Protesters are holding signs that say stop killing in Afghanistan.						contradiction
+16309								Protesters are holding signs that say stop killing in Iran.	Protesters are holding signs that say stop killing in Saudi Arabia.						contradiction
